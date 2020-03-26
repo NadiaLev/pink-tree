@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Надежда  Палаш](https://up.htmlacademy.ru/adaptive/19/user/1191579).
-* Наставник: `Неизвестно`.
+- Студент: [Надежда Палаш](https://up.htmlacademy.ru/adaptive/19/user/1191579).
+- Наставник: [Анастасия Хмара](https://githab.com/partizanka).
 
 ---
 
