@@ -7,103 +7,96 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo">
+  <header class="page-header page-header--index">
+    <a class="page-header__logo" href="#">
       <img class="page-header__logo-image" src="#" width="75" height="22" alt="Фотоприложение «Пинк»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"">
-            <a>Главная</a>
-          </li>
-          <li class=" site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a>Главная</a>
+        </li>
+        <li class=" main-nav__item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
     </nav>
+    <h2 class="page-header__title">Взгляните на жизнь иначе!</h2>
   </header>
 
   <main class="page-main">
-
     <h1 class="visually-hidden">Фотоприложение «Пинк»</h1>
 
-    <section class="application">
-      <div class="application__wrapper">
-        <header class="application__header">
-          <h2 class="visually-hidden">Скачать приложение</h2>
-          <p class="application__slogan">Взгляните на жизнь иначе!</p>
-          <img class="application__image" src="#" width="320" height="314" alt="Телефон в руке с фотоприложением">
-        </header>
-        <div class="application__links">
-          <a class="application__download button" href="https://www.apple.com/ru/ios/app-store/"
-            aria-label="Скачать фотоприложение Пинк в App Store" title="Скачать фотоприложение Пинк в App Store">Скачать
-            приложение</a>
-          <ul class="application__list">
-            <li class="application__item">
-              <a class="application__store application__store--app" href="https://www.apple.com/ru/ios/app-store/"
-                aria-label="Скачать фотоприложение Пинк в App Store"
-                title="Скачать фотоприложение Пинк в App Store"></a>
-            </li>
-            <li class="application__item">
-              <a class="application__store application__store--google" href="https://play.google.com/store/apps?hl=ru"
-                aria-label="Дизайн-студия Нёрдс в Instagram" title="Скачать фотоприложение Пинк в Google Play"></a>
-            </li>
-            <li class="application__item">
-              <a class="application__store application__store--microsoft"
-                href="https://www.microsoft.com/ru-by/store/apps/windows"
-                aria-label="Скачать фотоприложение Пинк в Microsoft Store"
-                title="Скачать фотоприложение Пинк в Microsoft Store"></a>
-            </li>
-          </ul>
-          <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
-      </div>
+    <section class="download">
+      <h2 class="visually-hidden">Скачать приложение</h2>
+      <a class="btn btn--download" href="https://www.apple.com/ru/ios/app-store/"
+        aria-label="Скачать фотоприложение Пинк в App Store" target="_blank">Скачать приложение</a>
+      <ul class="download__list">
+        <li class="download__item">
+          <a class="download__store application__store--app" href="https://www.apple.com/ru/ios/app-store/"
+            aria-label="Скачать фотоприложение Пинк в App Store" target="_blank"></a>
+        </li>
+        <li class="download__item">
+          <a class="download__store application__store--google" href="https://play.google.com/store/apps?hl=ru"
+            aria-label="Дизайн-студия Нёрдс в Instagram" target="blank"></a>
+        </li>
+        <li class="download__item">
+          <a class="download__store application__store--microsoft"
+            href="https://www.microsoft.com/ru-by/store/apps/windows"
+            aria-label="Скачать фотоприложение Пинк в Microsoft Store" target="_blank"></a>
+        </li>
+      </ul>
+      <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
 
     <section class="characteristics">
-      <div class="characteristics__wrapper">
-        <h2 class="visually-hidden">Информация о приложении</h2>
-        <div class="characteristics__offer offer">
-          <p class="offer__info">Устали от серости мегаполиса?</p>
-          <p class="offer__info">Нам есть, что вам предложить!</p>
-        </div>
-        <ul class="characteristics__list">
-          <li class="characteristics__item">
-            <h3 class="characteristics__title">Поднимает настроение</h3>
-            <p class="characteristics__description">Приложение позволит вам победить осеннюю хандру и депрессию
-              буквально в несколько кликов!</p>
-          </li>
-          <li class="characteristics__item">
-            <h3 class="characteristics__title">Меняет мир вокруг</h3>
-            <p class="characteristics__description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
-              чтобы усилить эффект</p>
-          </li>
-          <li class="characteristics__item">
-            <h3 class="characteristics__title">Заводит новых друзей</h3>
-            <p class="characteristics__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-              заводите новых</p>
-          </li>
-        </ul>
-      </div>
+      <h2 class="visually-hidden">Информация о приложении</h2>
+      <h3 class="index-text">Устали от серости мегаполиса?</h3>
+      <h3 class="index-text">Нам есть, что вам предложить!</h3>
+      <ul class="characteristics__list">
+        <li class="characteristics__item">
+          <h4 class="characteristics__title">Поднимает настроение</h4>
+          <p class="characteristics__description">Приложение позволит вам победить осеннюю хандру и депрессию
+            буквально в несколько кликов!</p>
+        </li>
+        <li class="characteristics__item">
+          <h4 class="characteristics__title">Меняет мир вокруг</h4>
+          <p class="characteristics__description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+            чтобы усилить эффект</p>
+        </li>
+        <li class="characteristics__item">
+          <h4 class="characteristics__title">Заводит новых друзей</h4>
+          <p class="characteristics__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+            заводите новых</p>
+        </li>
+      </ul>
     </section>
 
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Отзывы о нас</h2>
-        <div class="reviews__list slider__list"> /*надо ли*/
+        <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__text">"Это приложение превернуло мой мир и позволило по-новому взглянуть на привычные
-              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="reviews__text">«Это приложение превернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__text">«Это приложение превернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__text">«Это приложение превернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
         </div>
         <p class="reviews__toggle slider__toggles">
@@ -115,95 +108,87 @@
     </section>
 
     <section class="rates">
-      <div class="rates__wrapper slider">
-        <h2 class="visually-hidden">Тарифы</h2>
-        <table class="rates__list slider-list">
-          <tr>
-            <th class="rates__plan">
-              База
-              <span>1.99 USD</span>
-            </th>
-            <th class="rates__plan">
-              Стандарт
-              <span>3.99 USD</span>
-            </th>
-            <th class="rates__plan">
-              Анлим
-              <span>9.99 USD</span>
-            </th>
-          </tr>
-          <tr>
-            <td class="rates__component">
-              Розовый фильтр
-            </td>
-            <td class="rates__component">
-              Розовый фильтр
-            </td>
-            <td class="rates__component">
-              Розовый фильтр
-            </td>
-          </tr>
-          <tr>
-            <td class="rates__component">
-              Смайлики
-            </td>
-            <td class="rates__component">
-              Смайлики
-            </td>
-            <td class="rates__component">
-              Смайлики
-            </td>
-          </tr>
-          <tr>
-            <td class="stats__component">
-              Комментарии
-            </td>
-            <td class="stats__component">
-              Комментарии
-            </td>
-            <td class="stats__component">
-              Комментарии
-            </td>
-          </tr>
-        </table>
-        <p class="stats__toggle slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
-      </div>
+      <h2 class="visually-hidden">Тарифы</h2>
+      <table class="rates__list slider">
+        <tr>
+          <th class="rates__plan">
+            База
+            <span>1.99 USD</span>
+          </th>
+          <th class="rates__plan">
+            Стандарт
+            <span>3.99 USD</span>
+          </th>
+          <th class="rates__plan">
+            Анлим
+            <span>9.99 USD</span>
+          </th>
+        </tr>
+        <tr>
+          <td class="rates__component rates__component--ok">
+            Розовый фильтр
+          </td>
+          <td class="rates__component rates__component--ok">
+            Розовый фильтр
+          </td>
+          <td class="rates__component rates__component--ok">
+            Розовый фильтр
+          </td>
+        </tr>
+        <tr>
+          <td class="rates__component rates__component--canсel">
+            Смайлики
+          </td>
+          <td class="rates__component rates__component--ok">
+            Смайлики
+          </td>
+          <td class="rates__component rates__component--ok">
+            Смайлики
+          </td>
+        </tr>
+        <tr>
+          <td class="rates__component rates__component--canсel">
+            Комментарии
+          </td>
+          <td class="rates__component rates__component--canсel">
+            Комментарии
+          </td>
+          <td class="rates__component rates__component--ok">
+            Комментарии
+          </td>
+        </tr>
+      </table>
+      <p class="rates__toggle slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
     </section>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="page-footer__offer offer">
-          <p class="offer__info">Остались вопросы?<br>Свяжитесь с нами!</p>
-        </div>
-        <ul class="page-footer__list">
-          <li class="page-footer__item">
-            <p class="page-footer__text">Звоните:</p>
-            <a href="tel:+7815556666" class="page-footer__adress"><span
-                class="page-footer__adress-mobile">Тел.:</span>+7(812)555-66-66</a>
-          </li>
-          <li class="page-footer__item">
-            <p class="page-footer__text">Пишите:</p>
-            <a href="mailto:mail@htmlacademy.ru" class="page-footer__adress">mail@htmlacademy.ru</a>
-          </li>
-          <li class="page-footer__item">
-            <p class="page-footer__text">Приезжайте в гости:</p>
-            <address class="page-footer__adress">
-              ул. Большая<br>Конюшенная, 19/8
-            </address>
-          </li>
-        </ul>
-        <div class="page-footer__connection connection">
-          <img class="connection__map" src="img/map.png" width="320" height="645"
-            alt="Офис компании по адресу: ул.Б.Конюшенная, д. 19/8, Санкт-Петербург" />
-        </div>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <h3 class="index-text">Остались вопросы?<br>Свяжитесь с нами!</h3>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <h4 class="contacts__text">Звоните:</h4>
+          <a class="contacts__address" href="tel:+7815556666">+7(812)555-66-66</a>
+        </li>
+        <li class="contacts__item">
+          <h4 class="contacts__text">Пишите:</h4>
+          <a class="contacts__address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+        <li class="contacts__item">
+          <h4 class="contacts__text">Приезжайте в гости:</h4>
+          <p class="contacts__address">
+            ул. Большая<br>Конюшенная, 19/8
+          </p>
+        </li>
+      </ul>
+      <div class="contacts__connection">
+        <img class="contacts__map" src="img/map.png" width="320" height="645"
+          alt="Офис компании по адресу: ул.Б.Конюшенная, д. 19/8, Санкт-Петербург" />
       </div>
-      </div>
-    </footer>
+    </section>
   </main>
 </body>
 
