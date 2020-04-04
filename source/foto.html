@@ -13,169 +13,154 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-
-    <div class="title-container">
-      <div class="title-container__wrapper">
-        <h1 class="title-container__page-title">Фотографии пользователей</h1>
-      </div>
-    </div>
-
-    <section class="posts">
-      <div class="posts__wrapper">
-        <h2 class="visually-hidden">Посты пользователей</h2>
-        <div class="posts__offer offer">
-          <p class="offer__info">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
-            ваших?</p>
-        </div>
-      </div>
-      <ul class="posts__list">
-        <li class="posts__item">
-          <p class="posts__container-image">
-            <img class="posts__author-image" src="#" width="320" height="137" alt="Фотография от пользователя">
-          </p>
-          <blockquote class="posts__quote">
-            <cite class="posts__author-name">Анна (5 минут назад)</cite>
-            <p class="posts__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
-              перископе, задавайте свои</p>
-            <b class="posts__likes">Нравится:215</b>
-          </blockquote>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html">Главная</a>
         </li>
-        <li class="posts__item">
-          <p class="posts__container-image">
-            <img class="posts__author-image" src="#" width="280" height="180" alt="Фотография от пользователя">
-          </p>
-          <blockquote class="posts__quote">
-            <cite class="posts__author-name">Левон (5 часов назад)</cite>
-            <p class="posts__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <b class="posts__likes">Нравится:356</b>
-          </blockquote>
+        <li class="main-nav__item main-nav__item--active">
+          <a>Фотографии</a>
         </li>
-        <li class="posts__item">
-          <p class="posts__container-image">
-            <img class="posts__author-image" src="#" width="280" height="180" alt="Фотография от пользователя">
-          </p>
-          <blockquote class="posts__quote">
-            <cite class="posts__author-name">Антон (12 часов назад)</cite>
-            <p class="posts__text">Соседи будут рады!</p>
-            <b class="posts_likes">Нравится:666</b>
-          </blockquote>
+        <li class="main-nav__item">
+          <a href="form.html">Конкурс</a>
         </li>
-        <li class="posts__item">
-          <p class="posts__container-image">
-            <img class="posts__author-image" src="#" width="280" height="180" alt="Фотография от пользователя">
-          </p>
-          <blockquote class="posts__quote">
-            <cite class="posts__author-name">Борис (20 часов назад)</cite>
-            <p class="posts__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <b class="posts__likes">Нравится:215</b>
-          </blockquote>
-        </li>
-        <li class="posts__item">
-          <p class="posts__container-image">
-            <img class="posts__author-image" src="#" width="280" height="180" alt="Фотография от пользователя">
-          </p>
-          <blockquote class="posts__quote">
-            <cite class="posts__author-name">Сергей (25 часов назад)</cite>
-            <p class="posts__text">Самая кубанская в мире!</p>
-            <b class="posts__likes">Нравится:4</b>
-          </blockquote>
-        </li>
-        <li class="posts__item">
-          <p class="posts__container-image">
-            <img class="posts__author-image" src="#" width="280" height="180" alt="Фотография от пользователя">
-          </p>
-          <blockquote class="posts__quote">
-            <cite class="posts__author-name">Максим (40 часов назад)</cite>
-            <p class="posts__text">Где снег-то?</p>
-            <b class="posts__likes">Нравится:150</b>
-          </blockquote>
-        </li>
-        <li class="posts__item">
-          <p class="posts__container-image">
-            <img class="posts__author-image" src="#" width="280" height="180" alt="Фотография от пользователя">
-          </p>
-          <blockquote class="posts__quote">
-            <cite class="posts__author-name">Надежда (45 часов назад)</cite>
-            <p class="posts__text">Всем GM и взаимные лайки!</p>
-            <b class="posts__likes">Нравится:2560</b>
-          </blockquote>
+        <li class="main-nav__item">
+          <a href="#">HTML Academy</a>
         </li>
       </ul>
-      </div>
+    </nav>
+    <h2 class="page-header__title">Фотографии пользователей</h2>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Фотографии пользователей приложения «Пинк»</h1>
+
+    <section class="posts">
+      <h2 class="visually-hidden">Посты пользователей</h2>
+      <section class="posts__list">
+        <h3 class="site-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
+          ваших?</h3>
+        <article class="posts__item posts__item--panorama">
+          <a class="posts__full-image" href="#">
+            <img class="posts__author-image" src="#" width="320" height="137" alt="Фотография от пользователя">
+          </a>
+          <div class="posts__content">
+            <h4 class="posts__author-name">Анна (5 минут назад)</h4>
+            <p class="posts__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+              перископе, задавайте свои</p>
+            <a class="posts__likes" href="#">Нравится: 215</a>
+          </div>
+        </article>
+        <article class="posts__item">
+          <a class="posts__full-image" href="#">
+            <img class="posts__author-image" src="#" width="280" height="180" alt="Фотография от пользователя">
+          </a>
+          <div class="posts__content">
+            <h4 class="posts__author-name">Левон (5 часов назад)</h4>
+            <p class="posts__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a class="posts__likes" href="#">Нравится: 356</a>
+          </div>
+        </article>
+        <article class="posts__item">
+          <a class="posts__full-image" href="#">
+            <img class="posts__author-image" src="#" width="280" height="180" alt="Фотография от пользователя">
+          </a>
+          <div class="posts__content">
+            <h4 class="posts__author-name">Антон (12 часов назад)</h4>
+            <p class="posts__text">Соседи будут рады!</p>
+            <a class="posts_likes" href="#">Нравится: 666</a>
+          </div>
+        </article>
+        <article class="posts__item">
+          <a class="posts__full-image" href="#">
+            <img class="posts__author-image" src="#" width="280" height="180" alt="Фотография от пользователя">
+          </a>
+          <div class="posts__content">
+            <h4 class="posts__author-name">Борис (20 часов назад)</h4>
+            <p class="posts__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a class="posts__likes" href="#">Нравится: 215</a>
+          </div>
+        </article>
+        <article class="posts__item">
+          <a class="posts__full-image" href="#">
+            <img class="posts__author-image" src="#" width="280" height="180" alt="Фотография от пользователя">
+          </a>
+          <div class="posts__content">
+            <h4 class="posts__author-name">Сергей (25 часов назад)</h4>
+            <p class="posts__text">Самая кубанская в мире!</p>
+            <a class="posts__likes" href="#">Нравится: 4</a>
+          </div>
+        </article>
+        <article class="posts__item">
+          <a class="posts__full-image" href="#">
+            <img class="posts__author-image" src="#" width="280" height="180" alt="Фотография от пользователя">
+          </a>
+          <div class="posts__content">
+            <h4 class="posts__author-name">Максим (40 часов назад)</h4>
+            <p class="posts__text">Где снег-то?</p>
+            <a class="posts__likes" href="#">Нравится: 150</a>
+          </div>
+        </article>
+        <article class="posts__item">
+          <a class="posts__full-image" href="#">
+            <img class="posts__author-image" src="#" width="280" height="180" alt="Фотография от пользователя">
+          </a>
+          <div class="posts__content">
+            <h4 class="posts__author-name">Надежда (45 часов назад)</h4>
+            <p class="posts__text">Всем GM и взаимные лайки!</p>
+            <a class="posts__likes" href="#">Нравится: 2560</a>
+          </div>
+        </article>
+      </section>
     </section>
 
     <section class="publish">
-      <div class="publish__wrapper">
-        <h2 class="visually-hidden">Новая публикация</h2>
-        <div class="publish__offer offer">
-          <p class="offer__info">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        </div>
-        <article class="publish__post post">
-          <p class="post__container-image">
+      <h2 class="visually-hidden">Новая публикация</h2>
+      <h3 class="site-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h3>
+      <form class=" form-img" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-img__photo">
+          <label class="form-img__label" for="post">
             <img class="post__author-image" src="#" width="280" height="374" alt="Запостить фотографию">
-          </p>
-          <div class="post__tools">
-            <button class="post__tool post__tool--crop" type="button" aria-label="Обрезка"></button>
-            <button class="post__tool post__tool--fill" type="button" aria-label="Заливка"></button>
-            <button class="post__tool post__tool--brightness" type="button" aria-label="Яркость"></button>
-          </div>
-          <div class="post__range-filter">
-            <div class="post__scale"></div>
-            <div class="post__toggle"></div>
-          </div>
-          <div class="post__buttons">
-            <button class="post__button post__button--send" type="button" aria-label="Запостить"></button>
-            <button class="post__button post__button--cancel" type="button" aria-label="Отмена"></button>
-          </div>
-        </article>
-      </div>
+          </label>
+          <input class="form-img__input" type="file" id="post">
+        </div>
+        <dl>
+          <dt><button class="form-img__tool form-img--crop" type="button" aria-label="Обрезка"></button></dt>
+          <dd><input class="form-img__input" type="range"></dd>
+          <dt><button class="form-img__tool form-img--fill" type="button" aria-label="Заливка"></button></dt>
+          <dd><input class="form-img__input" type="range"></dd>
+          <dt><button class="form-img__tool form-img--brightness" type="button" aria-label="Яркость"></button></dt>
+          <dd><input class="form-img__input" type="range"></dd>
+        </dl>
+        <div class="form-img__buttons">
+          <button class="btn btn--primary" type="submit" aria-label="Запостить">Запостить</button>
+          <button class="btn btn--secondary" type="reset" aria-label="Отмена">Отмена</button>
+        </div>
+      </form>
+
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="page-footer__logo-image" src="#" width="147" height="40" alt="Фотоприложение «Пинк»">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#" aria-label="Фотостудия Пинк в Twitter"
-              title="Фотостудия Пинк в Twitter">Мы в Твиттере</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#" aria-label="Фотостудия Пинк в Facebook"
-              title="Фотостудия Пинк в Facebook">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="#" aria-label="Фотостудия Пинк в Telegram"
-              title="Фотостудия Пинк в v">Мы в Телеграме</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+    <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <img class="page-footer__logo-image" src="#" width="147" height="40" alt="Фотоприложение «Пинк»">
+    </a>
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="#" aria-label="Фотостудия Пинк в Twitter">Мы в Твиттере</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#" aria-label="Фотостудия Пинк в Facebook">Мы в
+          Фейсбуке</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="#" aria-label="Фотостудия Пинк в Telegram">Мы в
+          Телеграме</a>
+      </li>
+    </ul>
+    <p class="page-footer__copyright">
+      Разработано:
+      <a class="page-footer__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </p>
   </footer>
 </body>
 
