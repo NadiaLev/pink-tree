@@ -4,21 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>Фотоприложение «Пинк»</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header page-header--index">
     <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="#" width="75" height="22" alt="Фотоприложение «Пинк»">
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Фотоприложение «Пинк»">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--active">
           <a>Главная</a>
         </li>
-        <li class=" main-nav__item">
-          <a href="photo.html">Фотографии</a>
+        <li class="main-nav__item">
+          <a href="foto.html">Фотографии</a>
         </li>
         <li class="main-nav__item">
           <a href="form.html">Конкурс</a>
@@ -29,33 +30,31 @@
       </ul>
     </nav>
     <h2 class="page-header__title">Взгляните на жизнь иначе!</h2>
-  </header>
-
-  <main class="page-main">
-    <h1 class="visually-hidden">Фотоприложение «Пинк»</h1>
-
     <section class="download">
       <h2 class="visually-hidden">Скачать приложение</h2>
       <a class="btn btn--download" href="https://www.apple.com/ru/ios/app-store/"
         aria-label="Скачать фотоприложение Пинк в App Store" target="_blank">Скачать приложение</a>
       <ul class="download__list">
         <li class="download__item">
-          <a class="download__store application__store--app" href="https://www.apple.com/ru/ios/app-store/"
+          <a class="download__store download__store--app" href="https://www.apple.com/ru/ios/app-store/"
             aria-label="Скачать фотоприложение Пинк в App Store" target="_blank"></a>
         </li>
         <li class="download__item">
-          <a class="download__store application__store--google" href="https://play.google.com/store/apps?hl=ru"
-            aria-label="Дизайн-студия Нёрдс в Instagram" target="blank"></a>
+          <a class="download__store download__store--android" href="https://play.google.com/store/apps?hl=ru"
+            aria-label="Скачать фотоприложение Пинк в Play Market" target="blank"></a>
         </li>
         <li class="download__item">
-          <a class="download__store application__store--microsoft"
+          <a class="download__store download__store--microsoft"
             href="https://www.microsoft.com/ru-by/store/apps/windows"
             aria-label="Скачать фотоприложение Пинк в Microsoft Store" target="_blank"></a>
         </li>
       </ul>
       <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
+  </header>
 
+  <main class="page-main">
+    <h1 class="visually-hidden">Фотоприложение «Пинк»</h1>
     <section class="characteristics">
       <h2 class="visually-hidden">Информация о приложении</h2>
       <h3 class="index-text">Устали от серости мегаполиса?</h3>
@@ -85,15 +84,18 @@
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__text">«Это приложение превернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews__text">«Это приложение превернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__text">«Это приложение превернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews__text">«Это приложение превернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__text">«Это приложение превернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews__text">«Это приложение превернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
         </div>
         <p class="reviews__toggle slider__toggles">
@@ -107,21 +109,21 @@
     <section class="rates">
       <h2 class="visually-hidden">Тарифы</h2>
       <table class="rates__list slider">
-        <tr>
+        <tr class="rates__row rates__row--first">
           <th class="rates__plan">
             База
             <span>1.99 USD</span>
           </th>
-          <th class="rates__plan">
+          <th class="rates__plan rates__plan--hit">
             Стандарт
             <span>3.99 USD</span>
           </th>
           <th class="rates__plan">
-            Анлим
+            Aнлим
             <span>9.99 USD</span>
           </th>
         </tr>
-        <tr>
+        <tr class="rates__row rates__row--second">
           <td class="rates__component rates__component--ok">
             Розовый фильтр
           </td>
@@ -132,7 +134,7 @@
             Розовый фильтр
           </td>
         </tr>
-        <tr>
+        <tr class="rates__row">
           <td class="rates__component rates__component--canсel">
             Смайлики
           </td>
@@ -143,7 +145,7 @@
             Смайлики
           </td>
         </tr>
-        <tr>
+        <tr class="rates__row">
           <td class="rates__component rates__component--canсel">
             Комментарии
           </td>
@@ -182,7 +184,8 @@
         </li>
       </ul>
       <div class="contacts__connection">
-        <img class="contacts__map" src="img/map.png" width="320" height="645"alt="Офис компании по адресу: ул.Б.Конюшенная, д. 19/8, Санкт-Петербург" />
+        <img class="contacts__map" src="img/map.png" width="320" height="645"
+          alt="Офис компании по адресу: ул.Б.Конюшенная, д. 19/8, Санкт-Петербург" />
       </div>
     </section>
   </main>
