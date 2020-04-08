@@ -1,0 +1,95 @@
+.rates {
+  background-image: url("../../img/table-back.jpg");
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+.rates__list {
+  border-collapse: collapse;
+}
+
+.rates__row {
+  background-color: #ffffff;
+}
+
+.rates__row--first {
+  background-color: #283645;
+}
+
+.rates__row--second td {
+  border-top: none;
+}
+
+.rates__plan {
+  position: relative;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  border-left: solid 2px #e5e5e5;
+  border-right: solid 2px #e5e5e5;
+  width: 256px;
+  height: 98px;
+  padding-left: 22px;
+}
+
+.rates__plan--hit::before {
+  content: "Хит";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 75px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-image: url("../../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.rates__plan span {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.rates__component {
+  position: relative;
+  border: solid 2px #e5e5e5;
+  color: #283645;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 256px;
+  height: 59px;
+  padding-left: 22px;
+}
+
+.rates__component--ok::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  background-image: url("../../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.rates__component--canсel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  background-image: url("../../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

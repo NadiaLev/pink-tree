@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #2aab6d;
+  border: solid 2px #2aab6d;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #1c9b5e;
+  border: solid 2px #1c9b5e;
+}
+
+.button:active {
+  color: rgba(#ffffff, 0.3%);
+  background-color: #1c9b5e;
+  border: solid 2px #1c9b5e;
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+  border: solid 2px #e5e5e5;
+}
+
+.button--form {
+  padding: 23px 45px;
+}
+
+.button--error {
+  padding: 23px 125px;
+}
+
+.button--request {
+  padding: 23px 67px;
+}

@@ -1,0 +1,61 @@
+.posts__item {
+  position: relative;
+}
+
+.posts__item--panorama::before {
+  content: "Панорама дня";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 36px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #d22856;
+}
+
+.posts__author-name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #283645;
+}
+
+.posts__author-name span {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #283645;
+}
+
+.posts__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283645;
+}
+
+.posts__likes {
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.posts__likes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  background-image: url("../../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
