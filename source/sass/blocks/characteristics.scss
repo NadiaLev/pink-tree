@@ -1,5 +1,6 @@
 .characteristics__list {
   list-style: none;
+  background-color: $back-lightcolor;
   background-image: url("../../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -9,12 +10,12 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;
+  color: $black-color;
 }
 
 .characteristics__description {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: $grey-color;
 }
