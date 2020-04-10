@@ -1,5 +1,5 @@
 .rates {
-  background-image: url("../../img/table-back.jpg");
+  background-color: $back-lightcolor;
   background-repeat: repeat;
   background-position: 0 0;
 }
@@ -9,11 +9,11 @@
 }
 
 .rates__row {
-  background-color: #ffffff;
+  background-color: $white-color;
 }
 
 .rates__row--first {
-  background-color: #283645;
+  background-color: $grey-color;
 }
 
 .rates__row--second td {
@@ -22,15 +22,18 @@
 
 .rates__plan {
   position: relative;
-  color: #ffffff;
+  color: $white-color;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  border-left: solid 2px #e5e5e5;
-  border-right: solid 2px #e5e5e5;
-  width: 256px;
-  height: 98px;
+  text-transform: uppercase;
+  border-left: solid 2px $lightgrey-color;
+  border-right: solid 2px $lightgrey-color;
+  width: 232px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   padding-left: 22px;
+  padding-right: 22px;
 }
 
 .rates__plan--hit::before {
@@ -50,7 +53,7 @@
 }
 
 .rates__plan span {
-  color: #ffffff;
+  color: $white-color;
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
@@ -58,14 +61,17 @@
 
 .rates__component {
   position: relative;
-  border: solid 2px #e5e5e5;
-  color: #283645;
+  border: solid 2px $lightgrey-color;
+  color: $grey-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
-  width: 256px;
-  height: 59px;
+  text-transform: uppercase;
+  width: 189px;
+  padding-top: 22px;
   padding-left: 22px;
+  padding-right: 65px;
+  padding-bottom: 22px;
 }
 
 .rates__component--ok::after {

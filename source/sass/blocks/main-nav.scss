@@ -1,13 +1,21 @@
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .main-nav__item {
-  background-color: #283645;
+  background-color: $grey-color;
+  box-shadow: 0 1px 0 0 $black-color, 0 1px 0 0 rgba($white-color, 0.15%) inset;
 }
 
+/**.main-nav__item--active {
+  padding-bottom: 8px;
+  border-bottom: 2px solid $white-color;
+}
+**/
 .main-nav__item a {
-  color: #ffffff;
+  color: $white-color;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -16,19 +24,28 @@
 
 .main-nav__item a:hover,
 .main-nav__item a:focus {
-  color: #d22856;
+  color: $pink-color;
+}
+
+.main-nav__item a:active {
+  color: rgba($pink-color, 0.3%);
 }
 
 .main-nav__toggle {
-  position: absolute;
+  /** position: absolute;**/
   top: 0;
   left: 0;
   width: 30px;
   height: 30px;
   border: 0;
-  background-color: green /*transparent*/;
-  background-image: url("../../img/icon-menu-cross.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background-color: $grey-color;
   cursor: pointer;
+}
+
+.main-nav__toggle:hover path {
+  fill: $pink-color6;
+}
+
+.main-nav__toggle:active path {
+  fill: rgba($pink-color, 0.3%);
 }

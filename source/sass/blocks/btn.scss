@@ -16,20 +16,20 @@
   padding-right: 40px;
   padding-bottom: 20px;
   padding-left: 40px;
-  color: #ffffff;
-  border: solid 3px #ffffff;
+  color: $white-color;
+  border: solid 3px $white-color;
   background-color: transparent;
 }
 
 .btn--download:hover,
 .btn--download:focus {
-  color: #d22856;
-  background-color: #ffffff;
+  color: $pink-color;
+  background-color: $white-color;
 }
 
 .btn--download:active {
-  color: rgba(#d22856, 0.3%);
-  background-color: #ffffff;
+  color: rgba($pink-color, 0.3%);
+  background-color: $white-color;
 }
 
 .btn--primary {
@@ -37,20 +37,20 @@
   padding-right: 91px;
   padding-bottom: 22px;
   padding-left: 91px;
-  color: #d22856;
-  border: solid 3px #d22856;
+  color: $pink-color;
+  border: solid 3px $pink-color;
   background-color: transparent;
 }
 
 .btn--primary:hover,
 .btn--primary:focus {
-  color: #ffffff;
-  background-color: #d22856;
+  color: $white-color;
+  background-color: $pink-color;
 }
 
 .btn--primary:active {
-  color: rgba(#ffffff, 0.3%);
-  background-color: #d22856;
+  color: rgba($white-color, 0.3%);
+  background-color: $pink-color;
 }
 
 .btn--secondary {
@@ -58,19 +58,19 @@
   padding-right: 105px;
   padding-bottom: 22px;
   padding-left: 105px;
-  color: rgba(#283645, 0.1%);
-  border: solid 3px rgba(#283645, 0.1%);
+  color: rgba($grey-color, 0.1%);
+  border: solid 3px rgba($grey-color, 0.1%);
   background-color: transparent;
 }
 
 .btn--secondary:hover,
 .btn--secondary:focus {
-  color: rgba(#283645, 0.3%);
-  border: solid 3px rgba(#283645, 0.3%);
+  color: rgba($grey-color, 0.3%);
+  border: solid 3px rgba($grey-color, 0.3%);
 }
 
 .btn--secondary:active {
-  color: rgba(#ffffff, 0.3%);
-  border: solid 3px rgba(#283645, 0.3%);
-  background-color: rgba(#283645, 0.3%);
+  color: rgba($white-color, 0.3%);
+  border: solid 3px rgba($grey-color, 0.3%);
+  background-color: rgba($grey-color, 0.3%);
 }
