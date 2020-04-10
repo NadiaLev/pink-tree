@@ -1,0 +1,14 @@
+.form-img__tool {
+  fill: rgba($grey-color, 0.3%);
+  background-color: transparent;
+  border: 0;
+}
+
+.form-img__tool:hover {
+  fill: rgba($grey-color, 0.5%);
+}
+
+.form-img__tool:active,
+.form-img__tool:focus {
+  fill: $pink-color;
+}
