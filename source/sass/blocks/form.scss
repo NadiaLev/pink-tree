@@ -2,6 +2,10 @@
   border: none;
 }
 
+.form__fields--back {
+  background-color: $back-lightcolor;
+}
+
 .form__list {
   list-style: none;
 }
@@ -10,7 +14,7 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
-  color: #d22856;
+  color: $pink-color;
   text-transform: uppercase;
   text-align: center;
 }
@@ -20,27 +24,34 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #d22856;
+  color: $pink-color;
 }
 
 .form__label {
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  color: #283645;
+  color: $grey-color;
 }
 
 .form__text {
+  width: 232px;
+  padding-top: 22px;
+  padding-right: 22px;
+  padding-bottom: 19px;
+  padding-left: 22px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  color: #283645;
+  color: $grey-color;
+  border: solid 2px $lightgrey-color;
+  border-radius: 3px;
 }
 
 .data__explanation {
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
-  color: #283645;
+  color: $grey-color;
   text-transform: uppercase;
 }
