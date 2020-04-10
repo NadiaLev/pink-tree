@@ -5,29 +5,29 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  color: #ffffff;
+  color: $white-color;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  background-color: #2aab6d;
-  border: solid 2px #2aab6d;
+  background-color: $green-color;
+  border: solid 2px $green-color;
 }
 
 .button:hover,
 .button:focus {
-  background-color: #1c9b5e;
-  border: solid 2px #1c9b5e;
+  background-color: $green-color;
+  border: solid 2px $green-color;
 }
 
 .button:active {
-  color: rgba(#ffffff, 0.3%);
-  background-color: #1c9b5e;
-  border: solid 2px #1c9b5e;
+  color: rgba($white-color, 0.3%);
+  background-color: $green-color;
+  border: solid 2px $green-color;
 }
 
 .button:disabled {
-  background-color: #e5e5e5;
-  border: solid 2px #e5e5e5;
+  background-color: $lightgrey-color;
+  border: solid 2px $lightgrey-color;
 }
 
 .button--form {
