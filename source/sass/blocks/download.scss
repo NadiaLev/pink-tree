@@ -1,5 +1,5 @@
 .download {
-  background-color: #1d2631;
+  background-color: $back-darkcolor;
 }
 
 .download__list {
@@ -32,5 +32,5 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
-  color: #ffffff;
+  color: $white-color;
 }
