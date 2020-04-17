@@ -1,7 +1,43 @@
 .site-text {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: $grey-color;
   text-align: center;
+}
+
+.site-text span {
+  visibility: hidden;
+}
+
+.site-text--foto {
+  width: 250px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-text {
+    width: 500px;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .site-text span {
+    visibility: visible;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-text {
+    width: 770px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .site-text--foto {
+    width: 590px;
+  }
 }

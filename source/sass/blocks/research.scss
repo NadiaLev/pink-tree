@@ -1,0 +1,59 @@
+.research {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
+  }
+
+  .research__container {
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .research__effect {
+    margin-left: 310px;
+  }
+
+  .research__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: $black-color;
+  }
+
+  .research__description {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $grey-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research {
+    background-color: $back-lightcolor;
+  }
+
+  .research__container {
+    width: 940px;
+    padding: 0 130px;
+    margin: 0 auto;
+  }
+
+  .research__effect {
+    margin-left: 360px;
+  }
+
+  .research__title {
+    line-height: 30px;
+  }
+
+  .research__description {
+    padding-right: 59px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
