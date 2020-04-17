@@ -1,6 +1,7 @@
 .btn {
   display: inline-block;
   box-sizing: border-box;
+  width: 280px;
   border-radius: 30px;
   font-size: 18px;
   line-height: 18px;
@@ -12,10 +13,14 @@
 }
 
 .btn--download {
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   padding-top: 16px;
-  padding-right: 40px;
+
   padding-bottom: 20px;
-  padding-left: 40px;
+
   color: $white-color;
   border: solid 3px $white-color;
   background-color: transparent;
@@ -34,9 +39,9 @@
 
 .btn--primary {
   padding-top: 20px;
-  padding-right: 91px;
+
   padding-bottom: 22px;
-  padding-left: 91px;
+
   color: $pink-color;
   border: solid 3px $pink-color;
   background-color: transparent;
@@ -73,4 +78,10 @@
   color: rgba($white-color, 0.3%);
   border: solid 3px rgba($grey-color, 0.3%);
   background-color: rgba($grey-color, 0.3%);
+}
+
+@media (min-width: $tablet-width) {
+  .btn {
+    width: 300px;
+  }
 }
