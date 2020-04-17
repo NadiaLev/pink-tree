@@ -1,6 +1,24 @@
 .index-text {
+  width: 205px;
+  margin: 0 auto;
   font-size: 24px;
   font-weight: 300;
   color: $grey-color;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .index-text {
+    width: 620px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index-text {
+    width: 940px;
+    margin: 0;
+    text-align: center;
+  }
 }
