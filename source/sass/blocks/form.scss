@@ -1,12 +1,19 @@
 .form__fields {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
   border: none;
 }
 
-.form__fields--back {
+.form__wrapper {
+  width: 320px;
+  margin: 0 auto;
   background-color: $back-lightcolor;
 }
 
 .form__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -17,6 +24,10 @@
   color: $pink-color;
   text-transform: uppercase;
   text-align: center;
+}
+
+.form__legend--hidden {
+  display: none;
 }
 
 .form__label-text {
@@ -35,10 +46,11 @@
 }
 
 .form__text {
-  width: 232px;
-  padding-top: 22px;
+  width: 280px;
+  box-sizing: border-box;
+  padding-top: 16px;
   padding-right: 22px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   padding-left: 22px;
   font-size: 18px;
   line-height: 30px;
@@ -48,10 +60,194 @@
   border-radius: 3px;
 }
 
-.data__explanation {
+.form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.form__small {
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: $grey-color;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__fields--personal {
+    order: 0;
+  }
+
+  .form__wrapper--progress {
+    order: 3;
+  }
+
+  .form__fields--contacts {
+    order: 2;
+  }
+
+  .form__wrapper--program {
+    order: 1;
+  }
+
+  .form__fields--story {
+    order: 4;
+  }
+
+  .form__button-wrapper--send {
+    order: 5;
+  }
+
+  .form__fields {
+    width: 620px;
+  }
+
+  .form__list--contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__fields--border {
+    width: 576px;
+    border: solid 2px $lightgrey-color;
+  }
+
+  .form__item--personal {
+    display: flex;
+    align-items: center;
+  }
+
+  .form__text--personal {
+    flex-grow: 1;
+  }
+
+  .form__legend--hidden {
+    display: block;
+  }
+
+  .form__wrapper {
+    width: 620px;
+    background-color: transparent;
+  }
+
+  .form__item--contacts {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .form__label-text--contacts {
+    order: 1;
+  }
+
+  .form__text--contacts {
+    width: 500px;
+  }
+
+  .form__text--message {
+    width: 500px;
+    min-height: 193px;
+  }
+
+  .form__button-wrapper {
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__label-text--personal {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+    padding: 0 130px;
+    margin: 0 auto;
+  }
+
+  .form__fields {
+    width: 940px;
+  }
+
+  .form__wrapper {
+    width: 940px;
+    margin: 0;
+  }
+
+  .form__fields--border {
+    width: 900px;
+  }
+
+  .form__button-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .form__fields--personal {
+    width: 435px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form__fields--program {
+    width: 391px;
+  }
+
+  .form__wrapper--program {
+    width: 435px;
+  }
+
+  .form__list--contacts {
+    flex-direction: row;
+  }
+
+  .form__text--contacts {
+    width: 375px;
+  }
+
+  .form__list--progress {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    justify-content: space-between;
+  }
+
+  .form__list--progress li:nth-child(1) {
+    order: 0;
+  }
+
+  .form__list--progress li:nth-child(2) {
+    order: 4;
+  }
+
+  .form__list--progress li:nth-child(3) {
+    order: 1;
+  }
+
+  .form__list--progress li:nth-child(4) {
+    order: 5;
+  }
+
+  .form__list--progress li:nth-child(5) {
+    order: 3;
+  }
+
+  .form__list--progress li:nth-child(6) {
+    order: 6;
+  }
 }
