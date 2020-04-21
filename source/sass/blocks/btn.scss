@@ -2,6 +2,8 @@
   display: inline-block;
   box-sizing: border-box;
   width: 280px;
+  padding-top: 15px;
+  padding-bottom: 16px;
   border-radius: 30px;
   font-size: 18px;
   line-height: 18px;
@@ -13,14 +15,10 @@
 }
 
 .btn--download {
-
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  padding-top: 16px;
-
-  padding-bottom: 20px;
-
+  //height: 55px;
   color: $white-color;
   border: solid 3px $white-color;
   background-color: transparent;
@@ -38,10 +36,6 @@
 }
 
 .btn--primary {
-  padding-top: 20px;
-
-  padding-bottom: 22px;
-
   color: $pink-color;
   border: solid 3px $pink-color;
   background-color: transparent;
@@ -59,10 +53,6 @@
 }
 
 .btn--secondary {
-  padding-top: 20px;
-  padding-right: 105px;
-  padding-bottom: 22px;
-  padding-left: 105px;
   color: rgba($grey-color, 0.1%);
   border: solid 3px rgba($grey-color, 0.1%);
   background-color: transparent;
@@ -81,7 +71,26 @@
 }
 
 @media (min-width: $tablet-width) {
-  .btn {
+  .btn--download {
     width: 300px;
+  }
+
+  .btn--primary,
+  .btn--secondary {
+    width: 260px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .btn--download {
+    font-size: 21px;
+    line-height: 21px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .btn--primary,
+  .btn--secondary {
+    width: 183px;
   }
 }
