@@ -1,16 +1,27 @@
 .index-text {
-  width: 205px;
-  margin: 0 auto;
+  //position: relative;
+  width: 250px;
+  //margin: 0 auto;
   font-size: 24px;
+  line-height: 24px;
   font-weight: 300;
   color: $grey-color;
   text-align: center;
+  //z-index: 2;
+  //background-color: $white-color;
+}
+
+.index-text--footer {
+  position: absolute;
+  z-index: 3;
 }
 
 @media (min-width: $tablet-width) {
   .index-text {
     width: 620px;
-    margin: 0;
+    //margin: 0;
+    font-size: 40px;
+    line-height: 40px;
     text-align: center;
   }
 }
@@ -18,7 +29,9 @@
 @media (min-width: $desktop-width) {
   .index-text {
     width: 940px;
-    margin: 0;
+    //margin: 0;
+    font-size: 50px;
+    line-height: 50px;
     text-align: center;
   }
 }
