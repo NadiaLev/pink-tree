@@ -1,5 +1,42 @@
+.contacts {
+  position: relative;
+  background-color: $white-color;
+  width: 320px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
 .contacts__list {
+  position: absolute;
+  //position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
   list-style: none;
+  background-color: $white-color;
+
+  z-index: 2;
+}
+
+.contacts__list::after {
+  content: "";
+  position: absolute;
+  top: 250px;
+  left: 0;
+  width: 320px;
+  height: 123px;
+  background-image: url("../../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contacts__text {
@@ -14,6 +51,16 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 24px;
+  text-align: center;
+}
+
+.contacts__connection {
+  position: relative;
+  //position: absolute;
+  top: 0;
+  right: 0;
+
+  z-index: 1;
 }
 
 .contacts__address--mail:hover {
@@ -23,4 +70,72 @@
 .contacts__address--mail:active {
   color: $grey-color;
   opacity: 0.3;
+}
+
+.contacts__map {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 660px;
+  }
+
+  .contacts__list {
+    width: 620px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contacts__list::after {
+    width: 660px;
+    height: 123px;
+  }
+
+  .contacts__item {
+    width: 300px;
+  }
+
+  .contacts__item--come {
+    width: 620px;
+  }
+
+  .contacts__map {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 1200px;
+  }
+
+  .contacts__list {
+    width: 940px;
+  }
+
+  .contacts__item--call {
+    order: 0;
+  }
+
+  .contacts__item--write {
+    order: 2;
+  }
+
+  .contacts__item--come {
+    order: 1;
+    width: 300px;
+  }
+
+  .contacts__map {
+    width: 1200px;
+  }
+
+  .contacts__list::after {
+    width: 1200px;
+    height: 123px;
+  }
 }
