@@ -1,0 +1,54 @@
+.form-img {
+  width: auto;
+  margin: 0;
+  background-color: $back-lightcolor;
+}
+
+.form-img__container {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.form-img__tool {
+  fill: rgba($grey-color, 0.3%);
+  background-color: transparent;
+  border: 0;
+}
+
+.form-img__tool:hover {
+  fill: rgba($grey-color, 0.5%);
+}
+
+.form-img__tool:active,
+.form-img__tool:focus {
+  fill: $pink-color;
+}
+
+@media (min-width: $tablet-width) {
+  .form-img__container {
+    display: flex;
+    flex-direction: row;
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-img {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .form-img__container {
+    width: 800px;
+    padding-top: 0;
+    padding-right: 60px;
+    padding-bottom: 0;
+    padding-left: 80px;
+    margin: 0 auto;
+  }
+}

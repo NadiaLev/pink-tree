@@ -33,10 +33,10 @@
       </svg>-->
           </a>
           <button class="page-header__toggle" type="button" aria-label="Открыть меню">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px"
               viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-              <path fill="#FFFFFF" width="24" height="23"
+              <path fill="#FFFFFF"
                 d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z" />
             </svg>
           </button>
@@ -210,17 +210,17 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <h3 class="index-text">Остались вопросы?<br>Свяжитесь с нами!</h3>
+      <h3 class="index-text index-text--footer">Остались вопросы?<br>Свяжитесь с нами!</h3>
       <ul class="contacts__list">
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--call">
           <h4 class="contacts__text">Звоните:</h4>
           <a class="contacts__address" href="tel:+7815556666">+7(812)555-66-66</a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--write">
           <h4 class="contacts__text">Пишите:</h4>
           <a class="contacts__address contacts__address--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--come">
           <h4 class="contacts__text">Приезжайте в гости:</h4>
           <p class="contacts__address">
             ул. Большая<br>Конюшенная, 19/8
@@ -228,13 +228,17 @@
         </li>
       </ul>
       <div class="contacts__connection">
-        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645"
-          alt="Офис компании по адресу: ул.Б.Конюшенная, д. 19/8, Санкт-Петербург" />
-      </div>
+        <picture>
+          <source class="contacts__map" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+          <source class="contacts__map" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645"
+            alt="Офис компании по адресу: ул.Б.Конюшенная, д. 19/8, Санкт-Петербург" />
+        </picture>
+     </div>
     </section>
   </main>
 
-<footer class="page-footer page-footer--index">
+  <footer class="page-footer page-footer--index">
     <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
       <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40"
         alt="Фотоприложение «Пинк»">

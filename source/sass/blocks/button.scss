@@ -1,6 +1,9 @@
 .button {
   display: inline-block;
   box-sizing: border-box;
+  width: 280px;
+  padding-top: 16px;
+  padding-bottom: 17px;
   border-radius: 3px;
   font-size: 18px;
   line-height: 30px;
@@ -30,14 +33,14 @@
   border: solid 2px $lightgrey-color;
 }
 
-.button--form {
-  padding: 23px 45px;
+@media (min-width: $tablet-width) {
+  .button {
+    width: 300px;
+  }
 }
 
-.button--error {
-  padding: 23px 125px;
-}
-
-.button--request {
-  padding: 23px 67px;
+@media (min-width: $desktop-width) {
+  .button--request {
+    width: 460px;
+  }
 }

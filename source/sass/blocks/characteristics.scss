@@ -68,11 +68,13 @@
   .characteristics__list {
     flex-direction: row;
     margin-left: 0;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .characteristics__item {
-    flex-basis: 245px;
+    flex-basis: 300px;
+box-sizing: border-box;
+    padding: 0 28px;
   }
 
   .characteristics__title {

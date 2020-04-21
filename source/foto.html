@@ -72,10 +72,16 @@
       <h3 class="site-text site-text--foto">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
         хватает
         ваших?</h3>
-      <article class="posts__item-first">
-        <a class="posts__full-image " href="#">
-          <img class="posts__author-image posts__author-image--panorama" src="img/panorama-mobile@1x.jpg" width="320"
-            height="137" alt="Фотография от пользователя">
+      <article class="posts__item posts__item--panorama">
+        <a class="posts__full-image <!--posts__full-image--panorama-->" href="#">
+          <picture>
+            <source class="posts__author-image posts__author-image--panorama" media="(min-width: 1200px)"
+              srcset="img/panorama-desktop@1x.jpg">
+            <source class="posts__author-image posts__author-image--panorama" media="(min-width: 660px)"
+              srcset="img/panorama-tablet@1x.jpg">
+            <img class="posts__author-image posts__author-image--panorama" src="img/panorama-mobile@1x.jpg" width="320"
+              height="137" alt="Фотография от пользователя">
+          </picture>
         </a>
         <div class="posts__content posts__content--panorama">
           <h4 class="posts__author-name">Анна <span>(5 минут назад)</span></h4>
@@ -87,8 +93,12 @@
       <div class="posts__container">
         <article class="posts__item">
           <a class="posts__full-image" href="#">
-            <img class="posts__author-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография от пользователя">
+            <picture>
+              <source class="posts__author-image" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
+              <source class=" posts__author-image" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+              <img class=" posts__author-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180"
+                alt="Фотография от пользователя">
+            </picture>
           </a>
           <div class="posts__content">
             <h4 class="posts__author-name">Левон <span>(5 часов назад)</span></h4>
@@ -98,8 +108,12 @@
         </article>
         <article class="posts__item">
           <a class="posts__full-image" href="#">
-            <img class="posts__author-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография от пользователя">
+            <picture>
+              <source class="posts__author-image" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
+              <source class="posts__author-image" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+              <img class="posts__author-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
+                alt="Фотография от пользователя">
+            </picture>
           </a>
           <div class="posts__content">
             <h4 class="posts__author-name">Антон <span>(12 часов назад)</span></h4>
@@ -109,8 +123,12 @@
         </article>
         <article class="posts__item">
           <a class="posts__full-image" href="#">
-            <img class="posts__author-image" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография от пользователя">
+            <picture>
+              <source class="posts__author-image" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
+              <source class="posts__author-image" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+              <img class="posts__author-image" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
+                alt="Фотография от пользователя">
+            </picture>
           </a>
           <div class="posts__content">
             <h4 class="posts__author-name">Борис <span>(20 часов назад)</span></h4>
@@ -120,8 +138,12 @@
         </article>
         <article class="posts__item">
           <a class="posts__full-image" href="#">
-            <img class="posts__author-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография от пользователя">
+            <picture>
+              <source class="posts__author-image" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
+              <source class="posts__author-image" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+              <img class="posts__author-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
+                alt="Фотография от пользователя">
+            </picture>
           </a>
           <div class="posts__content">
             <h4 class="posts__author-name">Сергей <span>(25 часов назад)</span></h4>
@@ -131,8 +153,12 @@
         </article>
         <article class="posts__item">
           <a class="posts__full-image" href="#">
-            <img class="posts__author-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография от пользователя">
+            <picture>
+              <source class="posts__author-image" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
+              <source class="posts__author-image" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+              <img class="posts__author-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
+                alt="Фотография от пользователя">
+            </picture>
           </a>
           <div class="posts__content">
             <h4 class="posts__author-name">Максим <span>(40 часов назад)</span></h4>
@@ -142,8 +168,12 @@
         </article>
         <article class="posts__item">
           <a class="posts__full-image" href="#">
-            <img class="posts__author-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография от пользователя">
+            <picture>
+              <source class="posts__author-image" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
+              <source class="posts__author-image" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+              <img class="posts__author-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
+                alt="Фотография от пользователя">
+            </picture>
           </a>
           <div class="posts__content">
             <h4 class="posts__author-name">Надежда <span>(45 часов назад)</span></h4>
@@ -157,60 +187,70 @@
     <section class="publish">
       <h2 class="visually-hidden">Новая публикация</h2>
       <h3 class="site-text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h3>
-      <form class=" form-img" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form-img__photo">
-          <label class="form-img__label" for="post">
-            <img class="post__author-image" src="img/photo-road-mobile@1x.jpg" width="280" height="374"
-              alt="Запостить фотографию">
-          </label>
-          <input class="form-img__input" type="file" id="post">
-        </div>
-        <dl>
-          <dt>
-            <button class="form-img__tool form-img--crop" type="button" aria-label="Обрезка">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
-                viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                <path fill="none" d="M0,0h48v48H0V0z" />
-                <path
-                  d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
-              </svg>
-            </button>
-          </dt>
-          <dd>
-            <input class="form-img__input" type="range">
-          </dd>
-          <dt>
-            <button class="form-img__tool form-img--fill" type="button" aria-label="Заливка">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
-                viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                <path fill="none" d="M0,0h48v48H0V0z" />
-                <path
-                  d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
-                <rect y="40" width="48" height="3" />
-              </svg>
-            </button>
-          </dt>
-          <dd>
-            <input class="form-img__input" type="range"></dd>
-          <dt>
-            <button class="form-img__tool form-img--brightness" type="button" aria-label="Яркость">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px"
-                viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
-                xml:space="preserve">
-                <path
-                  d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
-                <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
-              </svg>
-            </button>
-          </dt>
-          <dd><input class="form-img__input" type="range"></dd>
-        </dl>
-        <div class="form-img__buttons">
-          <button class="btn btn--primary" type="submit" aria-label="Запостить">Запостить</button>
-          <button class="btn btn--secondary" type="reset" aria-label="Отмена">Отмена</button>
+      <form class="form-img" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-img__container">
+          <div class="form-img__photo">
+            <label class="form-img__label" for="post">
+              <picture>
+                <source class="form-img__image" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg"
+                  width="300" height="400" alt="Запостить фотографию">
+                <source class="form-img__image" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg"
+                  width="300" height="400" alt="Запостить фотографию">
+                <img class="form-img__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374"
+                  alt="Запостить фотографию">
+              </picture>
+            </label>
+            <input class=" visually-hidden form-img__input" type="file" id="post">
+          </div>
+          <div class="form-img__wrapper">
+            <dl>
+              <dt>
+                <button class="form-img__tool form-img--crop" type="button" aria-label="Обрезка">
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
+                    viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z" />
+                    <path
+                      d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
+                  </svg>
+                </button>
+              </dt>
+              <dd>
+                <input class="form-img__input" type="range">
+              </dd>
+              <dt>
+                <button class="form-img__tool form-img--fill" type="button" aria-label="Заливка">
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
+                    viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z" />
+                    <path
+                      d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
+                    <rect y="40" width="48" height="3" />
+                  </svg>
+                </button>
+              </dt>
+              <dd>
+                <input class="form-img__input" type="range"></dd>
+              <dt>
+                <button class="form-img__tool form-img--brightness" type="button" aria-label="Яркость">
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px"
+                    viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
+                    xml:space="preserve">
+                    <path
+                      d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
+                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
+                  </svg>
+                </button>
+              </dt>
+              <dd><input class="form-img__input" type="range"></dd>
+            </dl>
+            <div class="form-img__buttons">
+              <button class="btn btn--primary" type="submit" aria-label="Запостить">Запостить</button>
+              <button class="btn btn--secondary" type="reset" aria-label="Отмена">Отмена</button>
+            </div>
+          </div>
         </div>
       </form>
 
