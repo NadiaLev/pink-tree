@@ -14,23 +14,23 @@
   vertical-align: middle;
   background-color: $green-color;
   border: solid 2px $green-color;
-}
 
-.button:hover,
-.button:focus {
-  background-color: $green-color;
-  border: solid 2px $green-color;
-}
+  &:hover,
+  &:focus {
+    background-color: $green-color;
+    border: solid 2px $green-color;
+  }
 
-.button:active {
-  color: rgba($white-color, 0.3%);
-  background-color: $green-color;
-  border: solid 2px $green-color;
-}
+  &:active {
+    color: rgba($white-color, 0.3%);
+    background-color: $green-color;
+    border: solid 2px $green-color;
+  }
 
-.button:disabled {
-  background-color: $lightgrey-color;
-  border: solid 2px $lightgrey-color;
+  &:disabled {
+    background-color: $lightgrey-color;
+    border: solid 2px $lightgrey-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
