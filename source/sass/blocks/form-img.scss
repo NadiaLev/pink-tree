@@ -1,39 +1,202 @@
 .form-img {
   width: auto;
   margin: 0;
+  margin-bottom: 40px;
   background-color: $back-lightcolor;
 }
 
 .form-img__container {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 41px;
+  padding-left: 20px;
   width: 280px;
-  padding: 0 20px;
   margin: 0 auto;
 }
 
+.form-img__image {
+  display: block;
+  width: 280px;
+  height: 374px;
+}
+
+.form-img__list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+  min-height: 161px;
+}
+
+.form-img__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 42px;
+  width: 66px;
+
+  &--crop {
+    align-items: flex-start;
+  }
+
+  &--fill {
+    align-items: center;
+  }
+
+  &--brightness {
+    align-items: flex-end;
+  }
+}
+
 .form-img__tool {
+  padding: 0;
   fill: rgba($grey-color, 0.3%);
   background-color: transparent;
   border: 0;
+
+  &:hover {
+    fill: rgba($grey-color, 0.5%);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    fill: $pink-color;
+  }
 }
 
-.form-img__tool:hover {
-  fill: rgba($grey-color, 0.5%);
+.form-img__tool--crop svg {
+  width: 42px;
+  height: 42px;
 }
 
-.form-img__tool:active,
-.form-img__tool:focus {
-  fill: $pink-color;
+.form-img__tool--fill svg {
+  width: 48px;
+  height: 43px;
+}
+
+.form-img__tool--brightness svg {
+  margin-top: 3px;
+  width: 32px;
+  height: 32px;
+}
+
+.form-img__input {
+  position: absolute;
+  top: 119px;
+  left: 20px;
+  width: 240px;
+  display: none;
+}
+
+.form-img__tool:focus + .form-img__input,
+.form-img__tool:active + .form-img__input {
+  display: block;
+}
+//временно
+.form-img__tool:not(:active) ~ .form-img__input--crop {
+  display: block;
+}
+
+.form-img__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  min-height: 160px;
+  border-top: solid 1px $borderform-color;
 }
 
 @media (min-width: $tablet-width) {
   .form-img__container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 620px;
-    padding: 0 20px;
-    margin: 0 auto;
+    padding-top: 57px;
+    padding-right: 20px;
+    padding-bottom: 54px;
+    padding-left: 20px;
+  }
+
+  .form-img__image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .form-img__wrapper {
+    width: 275px;
+  }
+
+  .form-img__list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .form-img__item {
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 275px;
+    padding: 0;
+    padding-right: 18px;
+    border-bottom: solid 1px $borderform-color;
+
+    &--crop {
+      height: 56px;
+      //padding-top: 8px;
+      //padding-bottom: 21px;
+    }
+
+    &--fill {
+      height: 73px;
+      //padding-top: 27px;
+      //padding-bottom: 20px;
+    }
+
+    &--brightness {
+      height: 70px;
+      //padding-top: 26px;
+      //padding-bottom: 24px;
+    }
+  }
+
+  .form-img__tool {
+    fill: $pink-color;
+
+    &:hover {
+      fill: $pink-color;
+    }
+  }
+
+  .form-img__tool--crop svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .form-img__tool--fill svg {
+    width: 24px;
+    height: 22px;
+  }
+
+  .form-img__tool--brightness svg {
+    margin-top: 0;
+    width: 16px;
+    height: 16px;
+  }
+
+  .form-img__input {
+    position: static;
+    display: block;
+    width: 202px;
+  }
+
+  .form-img__buttons {
+    min-height: 201px;
+    border-top: none;
   }
 }
 
@@ -41,14 +204,48 @@
   .form-img {
     width: 940px;
     margin: 0 auto;
+    margin-bottom: 102px;
   }
 
   .form-img__container {
     width: 800px;
-    padding-top: 0;
     padding-right: 60px;
-    padding-bottom: 0;
+    padding-bottom: 57px;
     padding-left: 80px;
-    margin: 0 auto;
+  }
+
+  .form-img__wrapper {
+    width: 410px;
+  }
+
+  .form-img__item {
+    width: 410px;
+    padding-right: 30px;
+  }
+
+  .form-img__tool--crop svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-img__tool--fill svg {
+    width: 48px;
+    height: 43px;
+  }
+
+  .form-img__tool--brightness svg {
+    margin-top: 0;
+    width: 32px;
+    height: 32px;
+  }
+
+  .form-img__input {
+    width: 288px;
+  }
+
+  .form-img__buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }
