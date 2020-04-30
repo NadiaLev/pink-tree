@@ -1,14 +1,43 @@
+.form__wrapper {
+  width: auto;
+  margin: 0;
+  background-color: $back-lightcolor;
+}
+
 .form__fields {
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+  margin-bottom: 42px;
   border: none;
+
+  &--story {
+    margin-bottom: 48px;
+  }
 }
 
-.form__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  background-color: $back-lightcolor;
+.form__legend {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $pink-color;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--hidden {
+    display: none;
+  }
+
+  &--progress,
+  &--program {
+    padding-top: 37px;
+    margin-bottom: 37px;
+  }
+
+  &--story {
+    margin-bottom: 15px;
+  }
 }
 
 .form__list {
@@ -17,20 +46,48 @@
   list-style: none;
 }
 
-.form__legend {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-  color: $pink-color;
-  text-transform: uppercase;
-  text-align: center;
+.form__item {
+  box-sizing: border-box;
+
+  &--progress,
+  &--program {
+    margin-bottom: 50px;
+    padding-left: 70px;
+  }
+
+  &--personal,
+  &--contacts {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
-.form__legend--hidden {
-  display: none;
+.form__text {
+  width: 280px;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-right: 22px;
+  padding-bottom: 15px;
+  padding-left: 22px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $grey-color;
+  border: solid 2px $lightgrey-color;
+  border-radius: 3px;
+
+  &--message {
+    min-height: 201px;
+  }
 }
 
 .form__label-text {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -39,33 +96,99 @@
 }
 
 .form__label {
+  display: block;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   color: $grey-color;
+  cursor: pointer;
+  user-select: none;
 }
 
-.form__text {
-  width: 280px;
-  box-sizing: border-box;
-  padding-top: 16px;
-  padding-right: 22px;
-  padding-bottom: 17px;
-  padding-left: 22px;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  color: $grey-color;
-  border: solid 2px $lightgrey-color;
-  border-radius: 3px;
+.form__label--checkbox {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -70px;
+    width: 35px;
+    height: 35px;
+    border: solid 2px $lightgrey-color;
+    background-color: $white-color;
+  }
+
+  &:hover::before {
+    border: solid 2px $grey-color;
+  }
+
+  &:active::before {
+    border: solid 2px $pink-color;
+  }
+}
+
+.form__input--checkbox:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -61px;
+    width: 22px;
+    height: 16px;
+    background-image: url("../../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.form__label--radio {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -70px;
+    width: 36px;
+    height: 36px;
+    border: solid 2px $lightgrey-color;
+    background-color: $white-color;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    border: solid 2px $grey-color;
+  }
+
+  &:active::before {
+    border: solid 2px $pink-color;
+  }
+}
+
+.form__input--radio:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -58px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $pink-color;
+  }
 }
 
 .form__button-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+  margin-bottom: 50px;
+  min-height: 130px;
 }
 
 .form__small {
@@ -82,91 +205,189 @@
     flex-direction: column;
   }
 
-  .form__fields--personal {
-    order: 0;
-  }
+  .form__wrapper {
+    margin: 0 auto;
+    width: 620px;
+    background-color: transparent;
 
-  .form__wrapper--progress {
-    order: 3;
-  }
+    &--progress {
+      order: 3;
+    }
 
-  .form__fields--contacts {
-    order: 2;
-  }
-
-  .form__wrapper--program {
-    order: 1;
-  }
-
-  .form__fields--story {
-    order: 4;
-  }
-
-  .form__button-wrapper--send {
-    order: 5;
+    &--program {
+      order: 1;
+    }
   }
 
   .form__fields {
     width: 620px;
+    margin-bottom: 55px;
+    border-radius: 3px;
+
+    &--personal {
+      margin-top: 70px;
+      order: 0;
+    }
+
+    &--contacts {
+      order: 2;
+    }
+
+    &--border {
+      width: 500px;
+      padding: 0 58px;
+      border: solid 2px $lightgrey-color;
+    }
+
+    &--story {
+      margin-bottom: 65px;
+      padding-bottom: 44px;
+      order: 4;
+    }
   }
 
-  .form__list--contacts {
-    display: flex;
-    flex-direction: column;
+  .form__legend {
+    line-height: 30px;
+
+    &--progress {
+      padding: 0 32px;
+      margin-bottom: 47px;
+    }
+
+    &--contacts {
+      padding: 0 32px;
+      margin-bottom: 31px;
+    }
+
+    &--program {
+      padding: 0 25px;
+      margin-bottom: 47px;
+    }
+
+    &--story {
+      padding: 0 38px;
+      margin-bottom: 31px;
+    }
+
+    &--hidden {
+      display: block;
+    }
   }
 
-  .form__fields--border {
-    width: 576px;
-    border: solid 2px $lightgrey-color;
+  .form__legend br {
+    display: none;
   }
 
-  .form__item--personal {
-    display: flex;
-    align-items: center;
+  .form__list {
+    &--contacts {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
-  .form__text--personal {
-    flex-grow: 1;
+  .form__item {
+    &--contacts {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 35px;
+
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--personal {
+      display: flex;
+      align-items: center;
+      margin-bottom: 52px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &--progress {
+      padding-left: 60px;
+    }
+
+    &--program {
+      padding-left: 60px;
+    }
   }
 
-  .form__legend--hidden {
-    display: block;
+  .form__item--contacts::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    background-color: $lightgrey-color;
+    background-image: url("../../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 
-  .form__wrapper {
-    width: 620px;
-    background-color: transparent;
+  .form__item--contacts:nth-child(2)::before {
+    background-image: url("../../img/icon-mail.svg");
   }
 
-  .form__item--contacts {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+  .form__text {
+    &--personal {
+      flex-grow: 1;
+    }
+
+    &--contacts {
+      margin-bottom: 15px;
+      width: 500px;
+    }
+
+    &--message {
+      width: 500px;
+      min-height: 193px;
+    }
   }
 
-  .form__label-text--contacts {
-    order: 1;
+  .form__label-text {
+    margin-left: 0;
+    margin-bottom: 0;
+
+    &--contacts {
+      order: 1;
+    }
+
+    &--personal {
+      margin-right: 20px;
+    }
   }
 
-  .form__text--contacts {
-    width: 500px;
+  .form__label--checkbox::before {
+    left: -60px;
   }
 
-  .form__text--message {
-    width: 500px;
-    min-height: 193px;
+  .form__input--checkbox:checked + label::after {
+    left: -51px;
+  }
+
+  .form__label--radio::before {
+    left: -60px;
+  }
+
+  .form__input--radio:checked + label::after {
+    left: -48px;
   }
 
   .form__button-wrapper {
     width: 620px;
     padding: 0 20px;
     margin: 0 auto;
+    margin-bottom: 85px;
+    min-height: 66px;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .form__label-text--personal {
-    margin-right: 20px;
+    order: 5;
   }
 }
 
@@ -180,74 +401,117 @@
     margin: 0 auto;
   }
 
-  .form__fields {
-    width: 940px;
-  }
-
   .form__wrapper {
     width: 940px;
     margin: 0;
+
+    &--program {
+      width: 435px;
+    }
   }
 
-  .form__fields--border {
-    width: 900px;
+  .form__fields {
+    width: 940px;
+
+    &--personal {
+      margin: 0;
+      margin-top: 80px;
+      width: 435px;
+      padding: 0;
+    }
+
+    &--program {
+      margin-top: 60px;
+      padding: 0 20px;
+      width: 391px;
+    }
+
+    &--progress {
+      width: 820px;
+    }
+  }
+
+  .form__list {
+    &--personal {
+      margin-bottom: 0;
+    }
+
+    &--contacts {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &--progress {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &--program {
+      margin-left: 54px;
+    }
+  }
+
+  .form__item {
+    &--contacts {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 17px;
+
+      &:last-child {
+        margin-bottom: 17px;
+      }
+    }
+
+    &--progress {
+      &:nth-child(1) {
+        margin-right: 54px;
+        width: 260px;
+        order: 0;
+      }
+
+      &:nth-child(2) {
+        margin-right: 54px;
+        width: 260px;
+        order: 4;
+      }
+
+      &:nth-child(3) {
+        margin-right: 54px;
+        width: 242px;
+        order: 1;
+      }
+
+      &:nth-child(4) {
+        width: 242px;
+        margin-right: 54px;
+        order: 5;
+      }
+
+      &:nth-child(5) {
+        width: 210px;
+        order: 3;
+      }
+
+      &:nth-child(6) {
+        width: 210px;
+        order: 6;
+      }
+    }
+  }
+
+  .form__text {
+    &--contacts {
+      width: 375px;
+    }
+
+    &--message {
+      width: 820px;
+    }
   }
 
   .form__button-wrapper {
     width: 100%;
     padding: 0;
-  }
-
-  .form__fields--personal {
-    width: 435px;
-    padding: 0;
-    margin: 0;
-  }
-
-  .form__fields--program {
-    width: 391px;
-  }
-
-  .form__wrapper--program {
-    width: 435px;
-  }
-
-  .form__list--contacts {
-    flex-direction: row;
-  }
-
-  .form__text--contacts {
-    width: 375px;
-  }
-
-  .form__list--progress {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 40px;
-    justify-content: space-between;
-  }
-
-  .form__list--progress li:nth-child(1) {
-    order: 0;
-  }
-
-  .form__list--progress li:nth-child(2) {
-    order: 4;
-  }
-
-  .form__list--progress li:nth-child(3) {
-    order: 1;
-  }
-
-  .form__list--progress li:nth-child(4) {
-    order: 5;
-  }
-
-  .form__list--progress li:nth-child(5) {
-    order: 3;
-  }
-
-  .form__list--progress li:nth-child(6) {
-    order: 6;
+    margin-bottom: 70px;
   }
 }

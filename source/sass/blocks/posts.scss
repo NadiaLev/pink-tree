@@ -1,16 +1,3 @@
-.posts__content {
-  position: relative;
-  margin-bottom: 20px;
-  background-color: $back-lightcolor;
-}
-
-.posts__content--panorama {
-  width: 240px;
-  margin: 0 auto;
-  padding: 0 20px;
-  margin-bottom: 20px;
-}
-
 .posts__container {
   width: 280px;
   padding: 0 20px;
@@ -18,31 +5,57 @@
 }
 
 .posts__author-image {
-  width: 280px;
-}
-
-.posts__author-image--panorama {
   display: block;
-  width: 320px;
-  margin: 0 auto;
+  width: 280px;
+
+  &--panorama {
+    width: 320px;
+    margin: 0 auto;
+  }
 }
 
-.posts__content--panorama::before {
-  content: "Панорама дня";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 140px;
-  height: 36px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 24px;
-  color: $white-color;
-  text-transform: uppercase;
-  background-color: $pink-color;
+.posts__content {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 17px;
+  padding-right: 12px;
+  background-color: $back-lightcolor;
+
+  &--panorama {
+    width: 251px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &--panorama::before {
+    content: "";
+    position: absolute;
+    top: -137px;
+    right: 0;
+    width: 140px;
+    height: 36px;
+    background-color: $pink-color;
+  }
+
+  &--panorama::after {
+    content: "Панорама дня";
+    position: absolute;
+    top: -131px;
+    right: 19px;
+    width: 101px;
+    height: 24px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $white-color;
+    text-transform: uppercase;
+  }
 }
 
 .posts__author-name {
+  margin: 0;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
@@ -57,6 +70,8 @@
 }
 
 .posts__text {
+  margin: 0;
+  margin-bottom: 7px;
   padding: 0;
   font-size: 14px;
   font-weight: 400;
@@ -66,24 +81,24 @@
 
 .posts__likes {
   position: relative;
+  padding-left: 32px;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
   color: $pink-color;
-}
 
-.posts__likes::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 15px;
-  height: 15px;
-  background-color: green;
-  background-image: url("../../img/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url("../../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -96,28 +111,81 @@
     margin: 0 auto;
   }
 
-  .posts__content--panorama {
-    width: 580px;
-    padding: 0 20px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-
   .posts__item {
     width: 300px;
+
+    &--panorama {
+      width: auto;
+    }
   }
 
   .posts__author-image {
     width: 300px;
     height: 400px;
+
+    &--panorama {
+      width: 660px;
+    }
   }
 
-  .posts__author-image--panorama {
-    width: 660px;
+  .posts__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 105px;
+    padding-top: 25px;
+    padding-right: 32px;
+    padding-bottom: 25px;
+    padding-left: 27px;
+
+    &--panorama {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 566px;
+      min-height: 71px;
+      padding-right: 27px;
+      margin-bottom: 50px;
+    }
+
+    &::before {
+      top: -343px;
+    }
+
+    &::after {
+      top: -337px;
+    }
   }
 
-  .posts__item--panorama {
-    width: auto;
+  .posts__author-name--panorama {
+    width: 145px;
+    order: 0;
+  }
+
+  .posts__text--panorama {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .posts__likes {
+    padding-left: 0;
+    padding-right: 29px;
+    margin-top: auto;
+
+    &::before {
+      top: 5px;
+      left: 226px;
+    }
+
+    &--panorama {
+      width: 90px;
+      margin-top: 0;
+      text-align: right;
+      order: 1;
+    }
+
+    &--panorama::before {
+      left: 104px;
+    }
   }
 }
 
@@ -131,22 +199,25 @@
     margin: 0 auto;
   }
 
-  .posts__content--panorama {
-    width: 900px;
-    padding: 0 20px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-
-  .posts__item {
-    width: 300px;
-  }
-
-  .posts__item--panorama {
-    width: auto;
-  }
-
   .posts__author-image--panorama {
     width: 1200px;
+  }
+
+  .posts__content {
+    margin-bottom: 54px;
+    padding-right: 31px;
+
+    &--panorama {
+      width: 882px;
+      min-height: 46px;
+      padding-left: 27px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .posts__likes {
+    &--panorama::before {
+      left: 103px;
+    }
   }
 }

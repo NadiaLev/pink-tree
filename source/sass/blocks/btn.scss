@@ -36,6 +36,7 @@
 }
 
 .btn--primary {
+  margin-bottom: 12px;
   color: $pink-color;
   border: solid 3px $pink-color;
   background-color: transparent;
@@ -79,6 +80,10 @@
   .btn--secondary {
     width: 260px;
   }
+
+  .btn--primary {
+    margin-bottom: 24px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -92,5 +97,9 @@
   .btn--primary,
   .btn--secondary {
     width: 183px;
+  }
+
+  .btn--primary {
+    margin-bottom: 0;
   }
 }
