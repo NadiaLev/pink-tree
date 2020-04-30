@@ -2,27 +2,43 @@
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+  margin-top: 45px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: $grey-color;
   text-align: center;
+
+  &--foto {
+    width: 250px;
+    margin-bottom: 50px;
+  }
+
+  &--foto-down {
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
 }
 
 .site-text span {
   visibility: hidden;
 }
 
-.site-text--foto {
-  width: 250px;
-}
-
 @media (min-width: $tablet-width) {
   .site-text {
+    margin-top: 95px;
+    margin-bottom: 70px;
     width: 500px;
-    padding: 0 20px;
-    margin: 0 auto;
     font-size: 18px;
+
+    &--foto {
+      margin-bottom: 75px;
+    }
+
+    &--foto-down {
+      margin-top: 48px;
+      margin-bottom: 68px;
+    }
   }
 
   .site-text span {
@@ -32,12 +48,18 @@
 
 @media (min-width: $desktop-width) {
   .site-text {
+    margin-top: 95px;
+    margin-bottom: 0;
     width: 770px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
 
-  .site-text--foto {
-    width: 590px;
+    &--foto {
+      margin-bottom: 85px;
+      width: 590px;
+    }
+
+    &--foto-down {
+      margin-top: 8px;
+      margin-bottom: 62px;
+    }
   }
 }
