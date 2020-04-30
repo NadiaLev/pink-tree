@@ -1,7 +1,8 @@
 .index-text {
   //position: relative;
   width: 250px;
-  //margin: 0 auto;
+  //padding: 0 15px;
+  margin: 0 auto;
   font-size: 24px;
   line-height: 24px;
   font-weight: 300;
@@ -9,11 +10,6 @@
   text-align: center;
   //z-index: 2;
   //background-color: $white-color;
-}
-
-.index-text--footer {
-  position: absolute;
-  z-index: 3;
 }
 
 @media (min-width: $tablet-width) {
