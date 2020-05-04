@@ -1,19 +1,30 @@
 .contacts {
   position: relative;
-  background-color: $white-color;
   width: 320px;
   margin: 0 auto;
+  background-color: $white-color;
+}
+
+.contacts__question {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  width: auto;
+
   z-index: 2;
 }
 
 .contacts__list {
-  position: absolute;
-  //position: relative;
+  position: relative;
+  //position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 280px;
   padding: 0 20px;
+
   margin: 0 auto;
   list-style: none;
   background-color: $white-color;
@@ -22,15 +33,13 @@
 }
 
 .contacts__list::after {
+
   content: "";
-  position: absolute;
-  top: 250px;
-  left: 0;
   width: 320px;
   height: 123px;
   background-image: url("../../img/bg-triangle-white-footer.svg");
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 50% 0;
 }
 
 .contacts__item {
@@ -40,6 +49,8 @@
 }
 
 .contacts__text {
+  margin: 0;
+  margin-bottom: 10px;
   color: $grey-color;
   font-size: 18px;
   font-weight: 700;
@@ -47,35 +58,39 @@
 }
 
 .contacts__address {
+  margin: 0;
+  margin-bottom: 25px;
   color: $pink-color;
   font-size: 24px;
   font-weight: 300;
   line-height: 24px;
   text-align: center;
+
+  &--mail {
+    &:hover {
+      color: $grey-color;
+    }
+
+    &:active {
+      color: $grey-color;
+      opacity: 0.3;
+    }
+  }
 }
 
 .contacts__connection {
-  position: relative;
-  //position: absolute;
+  position: absolute;
   top: 0;
   right: 0;
 
   z-index: 1;
 }
 
-.contacts__address--mail:hover {
-  color: $grey-color;
-}
-
-.contacts__address--mail:active {
-  color: $grey-color;
-  opacity: 0.3;
-}
-
 .contacts__map {
-  display: block;
+  //position: relative;
   width: 320px;
   margin: 0 auto;
+  //z-index: -2;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,17 +105,12 @@
     justify-content: space-between;
   }
 
-  .contacts__list::after {
-    width: 660px;
-    height: 123px;
-  }
-
   .contacts__item {
     width: 300px;
-  }
 
-  .contacts__item--come {
-    width: 620px;
+    &--come {
+      width: 620px;
+    }
   }
 
   .contacts__map {
@@ -115,27 +125,22 @@
 
   .contacts__list {
     width: 940px;
-  }
 
-  .contacts__item--call {
-    order: 0;
-  }
+    &--call {
+      order: 0;
+    }
 
-  .contacts__item--write {
-    order: 2;
-  }
+    &--write {
+      order: 2;
+    }
 
-  .contacts__item--come {
-    order: 1;
-    width: 300px;
+    &--come {
+      order: 1;
+      width: 300px;
+    }
   }
 
   .contacts__map {
     width: 1200px;
-  }
-
-  .contacts__list::after {
-    width: 1200px;
-    height: 123px;
   }
 }
