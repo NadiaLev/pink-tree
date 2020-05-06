@@ -1,18 +1,8 @@
-.reviews__author-name {
-  color: $black-color;
-  font-size: 18px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 30px;
-  text-align: center;
-}
-
-.reviews__text {
-  color: $grey-color;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: center;
+.reviews {
+  position: relative;
+  padding-top: 45px;
+  z-index: 1;
+  background-color: $white-color;
 }
 
 .reviews__container {
@@ -27,24 +17,56 @@
   margin: 0;
 }
 
+.reviews__author-name {
+  margin-bottom: 10px;
+  color: $black-color;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 30px;
+  text-align: center;
+}
+
+.reviews__text {
+  margin: 0;
+  color: $grey-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
 .reviews__small {
+  margin: 0;
+  display: none;
+}
+
+.reviews__toggles {
+  margin-top: 30px;
+}
+
+.reviews__backticks {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .reviews__container {
-    width: 620px;
-    padding: 0 20px;
-    margin: 0 auto;
+  .reviews {
+    padding-top: 100px;
   }
 
-  .reviews__text {
-    font-size: 18px;
+  .reviews__container {
+    width: 620px;
   }
 
   .reviews__author-name {
+    margin-bottom: 0;
     font-size: 20px;
     order: 1;
+  }
+
+  .reviews__text {
+    margin-bottom: 35px;
+    font-size: 18px;
   }
 
   .reviews__small {
@@ -55,14 +77,62 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    padding-top: 185px;
+  }
+
   .reviews__container {
+    position: relative;
     width: 940px;
     padding: 0 130px;
-    margin: 0 auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -115px;
+      width: 79px;
+      height: 63px;
+      transform: translateX(-50%);
+      background-image: url("../../img/icon-quotes.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
   }
 
   .reviews__item {
     width: 700px;
     margin: 0 auto;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
+
+  .reviews__backticks {
+    display: block;
+  }
+
+  .reviews__button {
+    position: absolute;
+    top: 28px;
+    width: 22px;
+    height: 41px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &--left {
+      left: 130px;
+      background-image: url("../../img/icon-review-arrow-left.svg");
+    }
+
+    &--right {
+      right: 130px;
+      background-image: url("../../img/icon-review-arrow-right.svg");
+    }
   }
 }

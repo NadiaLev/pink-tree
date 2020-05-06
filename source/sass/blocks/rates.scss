@@ -1,19 +1,22 @@
 .rates {
+  position: relative;
+  margin-top: 35px;
+  padding-top: 91px;
+  padding-bottom: 42px;
   background-color: $back-lightcolor;
-  background-repeat: repeat;
-  background-position: 0 0;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -66px;
+  overflow: hidden;
+  z-index: 3;
 }
 
 .rates__list {
+  margin-bottom: 35px;
+  margin-left: -540px;
+  width: calc(280% - 320px);
   border-collapse: collapse;
-}
-
-.rates__row {
-  background-color: $white-color;
-}
-
-.rates__row--first {
-  background-color: $grey-color;
+  table-layout: fixed;
 }
 
 .rates__row--second td {
@@ -29,27 +32,41 @@
   text-transform: uppercase;
   border-left: solid 2px $lightgrey-color;
   border-right: solid 2px $lightgrey-color;
-  width: 232px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  width: 280px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   padding-left: 22px;
   padding-right: 22px;
-}
+  background-color: $grey-color;
+  box-sizing: border-box;
 
-.rates__plan--hit::before {
-  content: "Хит";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 75px;
-  height: 75px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
-  text-transform: uppercase;
-  background-image: url("../../img/bg-hit.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  &--hit {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 74px;
+      height: 73px;
+      background-image: url("../../img/bg-hit.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &::after {
+      content: "Хит";
+      position: absolute;
+      top: 12px;
+      left: 7px;
+      width: 35px;
+      height: 30px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: uppercase;
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 .rates__plan span {
@@ -67,35 +84,170 @@
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
-  width: 189px;
-  padding-top: 22px;
+  //width: 280px;
+  padding-top: 14px;
   padding-left: 22px;
-  padding-right: 65px;
-  padding-bottom: 22px;
+  padding-right: 17px;
+  padding-bottom: 15px;
+  background-color: $white-color;
+  box-sizing: border-box;
+
+  &--ok::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 17px;
+    width: 31px;
+    height: 22px;
+    background-image: url("../../img/icon-yes — 1.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 31px 21px;
+  }
+
+  &--cancel::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    width: 27px;
+    height: 26px;
+    background-image: url("../../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 27px 26px;
+  }
 }
 
-.rates__component--ok::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  background-color: green;
-  background-image: url("../../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+@media (min-width: $tablet-width) {
+  .rates {
+    margin-top: 16px;
+    padding-top: 88px;
+    padding-bottom: 68px;
+    background-position: 0 -42px;
+    overflow: auto;
+  }
+
+  .rates__list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 620px;
+    table-layout: auto;
+    box-sizing: border-box;
+  }
+
+  .rates__plan {
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 9px;
+    padding-left: 22px;
+    width: 155px;
+    font-size: 16px;
+
+    &--empty {
+      background-color: transparent;
+      border: none;
+      border-bottom: solid 2px $lightgrey-color;
+    }
+
+    &--hit {
+      &::before {
+        width: 61px;
+        height: 61px;
+        background-size: 61px 61px;
+      }
+
+      &::after {
+        top: 8px;
+        left: 3px;
+      }
+    }
+  }
+
+  .rates__plan span {
+    font-size: 18px;
+  }
+
+  .rates__component {
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    width: 155px;
+    text-transform: none;
+
+    &--ok::after {
+      top: 25%;
+      right: 62px;
+    }
+
+    &--cancel::after {
+      top: 25%;
+      right: 64px;
+    }
+  }
+
+  .rates__span {
+    display: none;
+  }
+
+  .rates__toggles {
+    display: none;
+  }
 }
 
-.rates__component--canсel::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  background-color: green;
-  background-image: url("../../img/icon-no.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+@media (min-width: $desktop-width) {
+  .rates {
+    margin-top: 40px;
+    padding-top: 148px;
+    padding-bottom: 95px;
+    background-position: 0 0;
+  }
+
+  .rates__list {
+    width: 940px;
+  }
+
+  .rates__plan {
+    padding-top: 19px;
+    padding-right: 22px;
+    padding-bottom: 19px;
+    padding-left: 22px;
+    width: 235px;
+    font-size: 18px;
+
+    &--hit {
+      &::before {
+        width: 74px;
+        height: 73px;
+        background-size: 74px 73px;
+      }
+
+      &::after {
+        top: 12px;
+        left: 7px;
+      }
+    }
+  }
+
+  .rates__plan span {
+    font-size: 24px;
+  }
+
+  .rates__component {
+    padding-top: 15px;
+    padding-right: 23px;
+    padding-bottom: 14px;
+    padding-left: 23px;
+    width: 235px;
+    font-size: 18px;
+
+    &--ok::after {
+      right: 102px;
+    }
+
+    &--cancel::after {
+      right: 104px;
+    }
+  }
 }
