@@ -60,15 +60,15 @@
   }
 
   &--twitter {
-    background-image: url("../../img/icon-twitter.svg");
+    background-image: url("../img/icon-twitter.svg");
   }
 
   &--facebook {
-    background-image: url("../../img/icon-facebook.svg");
+    background-image: url("../img/icon-facebook.svg");
   }
 
   &--youtube {
-    background-image: url("../../img/icon-youtube.svg");
+    background-image: url("../img/icon-youtube.svg");
   }
 }
 
@@ -109,7 +109,6 @@
 @media (min-width: $tablet-width) {
   .page-footer--index {
     position: relative;
-    margin-top: 355px;
     padding-top: 33px;
     padding-bottom: 33px;
     display: block;
@@ -136,7 +135,6 @@
 
 @media (min-width: $desktop-width) {
   .page-footer--index {
-    margin-top: 518px;
     padding-top: 68px;
     padding-bottom: 68px;
   }
