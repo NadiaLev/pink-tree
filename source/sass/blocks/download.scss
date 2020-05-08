@@ -8,8 +8,8 @@
   width: auto;
   margin-top: -70px;
   min-height: 465px;
-  background-image: url("../../img/iphone-hand-mobile@1x.png"),
-    url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 100%, 0 0;
   background-size: auto, cover;
@@ -70,16 +70,16 @@
   background-position: center;
 
   &--app {
-    background-image: url("../../img/logo-apple.svg");
+    background-image: url("../img/logo-apple.svg");
   }
 
   &--android {
-    background-image: url("../../img/logo-android.svg");
+    background-image: url("../img/logo-android.svg");
     background-position: 0 9px;
   }
 
   &--microsoft {
-    background-image: url("../../img/logo-microsoft.svg");
+    background-image: url("../img/logo-microsoft.svg");
     background-position: 0 11px;
   }
 }
@@ -88,7 +88,7 @@
   .download {
     margin-top: -110px;
     min-height: 729px;
-    background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 66% 100%, 0 0;
     background-size: 70%, 210%;
