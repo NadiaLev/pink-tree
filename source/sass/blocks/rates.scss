@@ -4,7 +4,7 @@
   padding-top: 91px;
   padding-bottom: 42px;
   background-color: $back-lightcolor;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: 0 -66px;
   overflow: hidden;
@@ -19,8 +19,16 @@
   table-layout: fixed;
 }
 
-.rates__row--second td {
-  border-top: none;
+.rates__row {
+  background-color: $white-color;
+
+  &--main {
+    background-color: $grey-color;
+  }
+
+  &--second td {
+    border-top: none;
+  }
 }
 
 .rates__plan {
@@ -30,14 +38,14 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  border-left: solid 2px $lightgrey-color;
+  //border-left: solid 2px $lightgrey-color;
   border-right: solid 2px $lightgrey-color;
   width: 280px;
   padding-top: 19px;
   padding-bottom: 19px;
   padding-left: 22px;
   padding-right: 22px;
-  background-color: $grey-color;
+  //background-color: $grey-color;
   box-sizing: border-box;
 
   &--hit {
@@ -48,7 +56,7 @@
       left: 0;
       width: 74px;
       height: 73px;
-      background-image: url("../../img/bg-hit.svg");
+      background-image: url("../img/bg-hit.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
     }
@@ -89,7 +97,6 @@
   padding-left: 22px;
   padding-right: 17px;
   padding-bottom: 15px;
-  background-color: $white-color;
   box-sizing: border-box;
 
   &--ok::after {
@@ -99,20 +106,20 @@
     right: 17px;
     width: 31px;
     height: 22px;
-    background-image: url("../../img/icon-yes — 1.svg");
+    background-image: url("../img/icon-yes — 1.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 31px 21px;
   }
 
-  &--cancel::after {
+  &--close::after {
     content: "";
     position: absolute;
     top: 17px;
     right: 17px;
     width: 27px;
     height: 26px;
-    background-image: url("../../img/icon-no.svg");
+    background-image: url("../img/icon-no.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 27px 26px;
@@ -145,9 +152,10 @@
     font-size: 16px;
 
     &--empty {
-      background-color: transparent;
-      border: none;
-      border-bottom: solid 2px $lightgrey-color;
+      visibility: hidden;
+      // background-color: transparent;
+      //border: none;
+      // border-bottom: solid 2px $lightgrey-color;
     }
 
     &--hit {
@@ -181,7 +189,7 @@
       right: 62px;
     }
 
-    &--cancel::after {
+    &--close::after {
       top: 25%;
       right: 64px;
     }
@@ -246,7 +254,7 @@
       right: 102px;
     }
 
-    &--cancel::after {
+    &--close::after {
       right: 104px;
     }
   }
