@@ -14,6 +14,11 @@
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__container">
         <a class="main-nav__logo" href="#">
+<!--<picture>
+      <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+      <img src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+    </picture>-->
           <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
             alt="Фотоприложение «Пинк»">
           <!--<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -152,7 +157,7 @@
     <section class="rates">
       <h2 class="visually-hidden">Тарифы</h2>
       <table class="rates__list">
-        <tr class="rates__row">
+        <tr class="rates__row rates__row--main">
           <th class="rates__plan rates__plan--empty"></th>
           <th class="rates__plan">
             База<br>
@@ -181,7 +186,7 @@
         </tr>
         <tr class="rates__row">
           <td class="rates__component">Смайлики</td>
-          <td class="rates__component rates__component--canсel">
+          <td class="rates__component rates__component--close">
             <span class="rates__span">Смайлики</span>
           </td>
           <td class="rates__component rates__component--ok">
@@ -193,10 +198,10 @@
         </tr>
         <tr class="rates__row">
           <td class="rates__component">Комментарии</td>
-          <td class="rates__component rates__component--canсel">
+          <td class="rates__component rates__component--close">
             <span class="rates__span">Комментарии</span>
           </td>
-          <td class="rates__component rates__component--canсel">
+          <td class="rates__component rates__component--close">
             <span class="rates__span">Комментарии</span>
           </td>
           <td class="rates__component rates__component--ok">
@@ -217,26 +222,25 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper">
-        <h3 class="contacts__question index-text">Остались вопросы?<br>Свяжитесь с нами!</h3>
-        <ul class="contacts__list">
-          <li class="contacts__item contacts__item--call">
-            <h4 class="contacts__text">Звоните:</h4>
-            <a class="contacts__address" href="tel:+7815556666">+7(812)555-66-66</a>
-          </li>
-          <li class="contacts__item contacts__item--write">
-            <h4 class="contacts__text">Пишите:</h4>
-            <a class="contacts__address contacts__address--mail"
-              href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-          <li class="contacts__item contacts__item--come">
-            <h4 class="contacts__text">Приезжайте в гости:</h4>
-            <p class="contacts__address">
-              ул. Большая<br>Конюшенная, 19/8
-            </p>
-          </li>
-        </ul>
-      </div>
+<div class="contacts__wrapper">
+      <h3 class="contacts__question index-text">Остались вопросы?<br>Свяжитесь с нами!</h3>
+      <ul class="contacts__list">
+        <li class="contacts__item contacts__item--call">
+          <h4 class="contacts__text">Звоните:</h4>
+          <a class="contacts__address" href="tel:+7815556666">+7(812)555-66-66</a>
+        </li>
+        <li class="contacts__item contacts__item--write">
+          <h4 class="contacts__text">Пишите:</h4>
+          <a class="contacts__address contacts__address--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+        <li class="contacts__item contacts__item--come">
+          <h4 class="contacts__text">Приезжайте в гости:</h4>
+          <p class="contacts__address">
+            ул. Большая<br>Конюшенная, 19/8
+          </p>
+        </li>
+      </ul>
+</div>
       <div class="contacts__connection">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056386!2d30.3208533512418!3d59.93871916896577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1588755172238!5m2!1sru!2sby"
@@ -244,7 +248,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
           <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
-          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645"
+          <img class="contacts__map" src="img/bg-map-mobile@1x.jpg" width="320" height="200"
             alt="Офис компании по адресу: ул.Б.Конюшенная, д. 19/8, Санкт-Петербург" />
         </picture>
       </div>
