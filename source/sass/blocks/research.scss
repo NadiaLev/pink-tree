@@ -2,6 +2,13 @@
   display: none;
 }
 
+.research__link {
+  &:focus {
+    outline: none;
+    border: solid 2px $pink-color;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .research {
     display: block;
