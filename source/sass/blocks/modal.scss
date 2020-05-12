@@ -6,24 +6,34 @@
   width: 320px;
   margin: 0 auto;
   box-shadow: 0 7px 15px 0 rgba($black-shadow, 0.15%);
-}
 
-.modal--error {
-  min-height: 289px;
-}
+  &--error {
+    box-sizing: border-box;
+    min-height: 289px;
+  }
 
-.modal--request {
-  min-height: 380px;
+  &--request {
+    box-sizing: border-box;
+    min-height: 380px;
+  }
 }
 
 .modal__title {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
   text-align: center;
 }
 
 .modal__message {
-  padding: 0 20px;
+  margin: 0;
+  padding: 0 29px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -33,50 +43,92 @@
   justify-content: center;
   align-items: center;
   width: 320px;
-  height: 163px;
   background-color: $back-lightcolor;
-}
 
-.modal__button-container--error {
-  background-color: transparent;
+  &--error {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: transparent;
+  }
+
+  &--request {
+    margin-top: 33px;
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .modal {
     width: 460px;
+
+    &--error {
+      min-height: 363px;
+    }
+
+    &--request {
+      min-height: 432px;
+    }
   }
 
-  .modal--error {
-    min-height: 363px;
+  .modal__title {
+    padding: 0 100px;
+    font-size: 30px;
+    line-height: 40px;
   }
 
-  .modal--request {
-    min-height: 432px;
+  .modal__message {
+    padding: 0 80px;
+    font-size: 18px;
+  }
+
+  .modal__message br {
+    display: none;
   }
 
   .modal__button-container {
     width: 460px;
+
+    &--error {
+      padding-top: 38px;
+      padding-bottom: 52px;
+    }
+
+    &--request {
+      margin-top: 33px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .modal {
     width: 780px;
+
+    &--error {
+      min-height: 377px;
+    }
+
+    &--request {
+      min-height: 377px;
+    }
   }
 
-  .modal--error {
-    min-height: 377px;
-  }
-
-  .modal--request {
-    min-height: 377px;
+  .modal__message {
+    padding: 0 200px;
   }
 
   .modal__button-container {
     width: 780px;
-  }
 
-  .modal__button-container--error {
-    background-color: $back-lightcolor;
+    &--error {
+      margin-top: 60px;
+      padding-top: 47px;
+      padding-bottom: 53px;
+      background-color: $back-lightcolor;
+    }
+
+    &--request {
+      margin-top: 38px;
+    }
   }
 }
