@@ -26,6 +26,7 @@
 
 .btn--download:hover,
 .btn--download:focus {
+  outline: none;
   color: $pink-color;
   background-color: $white-color;
 }
@@ -44,6 +45,7 @@
 
 .btn--primary:hover,
 .btn--primary:focus {
+  outline: none;
   color: $white-color;
   background-color: $pink-color;
 }
@@ -61,6 +63,7 @@
 
 .btn--secondary:hover,
 .btn--secondary:focus {
+  outline: none;
   color: rgba($grey-color, 0.3%);
   border: solid 3px rgba($grey-color, 0.3%);
 }
