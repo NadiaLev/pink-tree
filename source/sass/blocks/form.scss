@@ -82,6 +82,16 @@
   &--message {
     min-height: 201px;
   }
+
+  &:hover,
+  &:focus {
+    border: solid 2px $grey-color;
+    outline: none;
+  }
+
+  &:active {
+    border: solid 2px $pink-color;
+  }
 }
 
 .form__label-text {
@@ -142,6 +152,10 @@
   }
 }
 
+.form__input--checkbox:focus + label::before {
+  border: solid 2px $grey-color;
+}
+
 .form__label--radio {
   position: relative;
 
@@ -164,6 +178,10 @@
   &:active::before {
     border: solid 2px $pink-color;
   }
+}
+
+.form__input--radio:focus + label::before {
+  border: solid 2px $grey-color;
 }
 
 .form__input--radio:checked + label {
@@ -320,10 +338,10 @@
   .form__item--contacts::before {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 63px;
-    height: 63px;
+    top: 2px;
+    right: 2px;
+    width: 59px;
+    height: 59px;
     background-color: $lightgrey-color;
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
