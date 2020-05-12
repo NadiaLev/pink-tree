@@ -1,6 +1,3 @@
-/**.page-footer__logo-image:hover path {
-  fill: $pink-color;
-}**/
 .page-footer {
   background-color: $white-color;
   width: auto;
@@ -21,6 +18,10 @@
 
 .page-footer__logo {
   margin-bottom: 40px;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .page-footer__logo-image {
@@ -51,7 +52,9 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     border: solid 3px $grey-color;
   }
 
@@ -94,10 +97,14 @@
   height: 52px;
 }
 
-.page-footer__developer {
-  fill: $pink-color;
+.page-footer__developer:focus {
+  outline: none;
+  border: solid 2px $pink-color;
+}
 
-  &:hover {
+.page-footer__developer path {
+  &:hover,
+  &:focus {
     fill: $grey-color;
   }
 
