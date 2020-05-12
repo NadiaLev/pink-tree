@@ -14,7 +14,7 @@
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__container">
         <a class="main-nav__logo" href="#">
-<!--<picture>
+          <!--<picture>
       <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
       <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
       <img src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
@@ -38,7 +38,7 @@
         </a>
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
+          <li class="main-nav__item">
             <a>Главная</a>
           </li>
           <li class="main-nav__item">
@@ -48,7 +48,7 @@
             <a href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -148,8 +148,10 @@
           <label class="sliders__item sliders__item--3" for="cite-3" aria-label="3"></label>
         </div>
         <div class="reviews__backticks">
-          <button class="reviews__button reviews__button--left" type="button"></button>
-          <button class="reviews__button reviews__button--right" type="button"></button>
+          <button class="reviews__button reviews__button--left" type="button">
+          </button>
+          <button class="reviews__button reviews__button--right" type="button">
+          </button>
         </div>
       </div>
     </section>
@@ -222,34 +224,35 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-<div class="contacts__wrapper">
-      <h3 class="contacts__question index-text">Остались вопросы?<br>Свяжитесь с нами!</h3>
-      <ul class="contacts__list">
-        <li class="contacts__item contacts__item--call">
-          <h4 class="contacts__text">Звоните:</h4>
-          <a class="contacts__address" href="tel:+7815556666">+7(812)555-66-66</a>
-        </li>
-        <li class="contacts__item contacts__item--write">
-          <h4 class="contacts__text">Пишите:</h4>
-          <a class="contacts__address contacts__address--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-        <li class="contacts__item contacts__item--come">
-          <h4 class="contacts__text">Приезжайте в гости:</h4>
-          <p class="contacts__address">
-            ул. Большая<br>Конюшенная, 19/8
-          </p>
-        </li>
-      </ul>
-</div>
+      <div class="contacts__wrapper">
+        <h3 class="contacts__question index-text">Остались вопросы?<br>Свяжитесь с нами!</h3>
+        <ul class="contacts__list">
+          <li class="contacts__item contacts__item--call">
+            <h4 class="contacts__text">Звоните:</h4>
+            <a class="contacts__address" href="tel:+7815556666">+7(812)555-66-66</a>
+          </li>
+          <li class="contacts__item contacts__item--write">
+            <h4 class="contacts__text">Пишите:</h4>
+            <a class="contacts__address contacts__address--mail"
+              href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item contacts__item--come">
+            <h4 class="contacts__text">Приезжайте в гости:</h4>
+            <p class="contacts__address">
+              ул. Большая<br>Конюшенная, 19/8
+            </p>
+          </li>
+        </ul>
+      </div>
       <div class="contacts__connection">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056386!2d30.3208533512418!3d59.93871916896577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1588755172238!5m2!1sru!2sby"
           allowfullscreen=""></iframe>
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
-          <img class="contacts__map" src="img/bg-map-mobile@1x.jpg" width="320" height="200"
-            alt="Офис компании по адресу: ул.Б.Конюшенная, д. 19/8, Санкт-Петербург" />
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg" width="320"
+            height="200" alt="Офис компании по адресу: ул.Б.Конюшенная, д. 19/8, Санкт-Петербург" />
         </picture>
       </div>
     </section>
@@ -257,7 +260,7 @@
 
   <footer class="page-footer page-footer--index">
     <div class="page-footer__container">
-      <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="page-footer__logo" href="#">
         <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40"
           alt="Фотоприложение «Пинк»">
       </a>
