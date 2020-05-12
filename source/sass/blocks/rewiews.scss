@@ -125,6 +125,16 @@
     opacity: 0.3;
     cursor: pointer;
 
+    &:hover,
+    &:focus {
+      outline: none;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+
     &--left {
       left: 130px;
       background-image: url("../img/icon-review-arrow-left.svg");
