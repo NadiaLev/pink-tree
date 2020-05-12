@@ -52,15 +52,15 @@
   line-height: 24px;
   text-align: center;
 
-  &--mail {
-    &:hover {
-      color: $grey-color;
-    }
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $grey-color;
+  }
 
-    &:active {
-      color: $grey-color;
-      opacity: 0.3;
-    }
+  &:active {
+    color: $grey-color;
+    opacity: 0.3;
   }
 }
 
