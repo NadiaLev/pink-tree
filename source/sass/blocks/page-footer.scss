@@ -24,12 +24,32 @@
   }
 }
 
-.page-footer__logo-image {
+.page-footer__logo svg {
   display: block;
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.page-footer__logo:hover .page-footer__logo-pink {
+  fill: $pink-color;
+}
+
+.page-footer__logo:active .page-footer__logo-pink {
+  fill: $grey-color;
+}
+
+.page-footer__logo-point {
+  display: none;
+}
+
+.page-footer__logo-glassesdekstop {
+  display: none;
+}
+
+.page-footer__logo-stars {
+  display: none;
 }
 
 .page-footer__list {
@@ -97,11 +117,6 @@
   height: 52px;
 }
 
-.page-footer__developer:focus {
-  outline: none;
-  border: solid 2px $pink-color;
-}
-
 .page-footer__developer path {
   &:hover,
   &:focus {
@@ -150,5 +165,21 @@
     width: 940px;
     padding: 0 130px;
     //margin-bottom: 71px;
+  }
+
+  .page-footer__logo-glassestablet {
+    display: none;
+  }
+
+  .page-footer__logo-glassesdekstop {
+    display: inline-block;
+  }
+
+  .page-footer__logo-stars {
+    display: inline-block;
+  }
+
+  .page-footer__logo-point {
+    display: inline-block;
   }
 }
