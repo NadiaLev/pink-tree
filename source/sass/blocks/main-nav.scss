@@ -18,6 +18,47 @@
   outline: none;
 }
 
+/*.main-nav__logo svg {
+  width: 75px;
+  height: 22px;
+}*/
+.main-nav__logo:hover .main-nav__logo-pink,
+.main-nav__logo:hover .main-nav__logo-glassestablet,
+.main-nav__logo:hover .main-nav__logo-glassesdekstop {
+  fill: $pink-color;
+}
+
+.main-nav__logo:active .main-nav__logo-pink,
+.main-nav__logo:active .main-nav__logo-glassestablet,
+.main-nav__logo:active .main-nav__logo-glassesdekstop {
+  fill: $white-color;
+}
+
+.main-nav__logo svg {
+  margin-left: -71px;
+  margin-bottom: 16px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__logo-point {
+  display: none;
+}
+
+.main-nav__logo-glassesdekstop {
+  display: none;
+}
+
+.main-nav__logo-glassestablet {
+  display: none;
+}
+
+.main-nav__logo-stars {
+  display: none;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -159,6 +200,14 @@
     min-height: 110px;
   }
 
+  .main-nav__logo svg {
+    margin-left: 0;
+  }
+
+  .main-nav__logo-glassestablet {
+    display: inline-block;
+  }
+
   .main-nav__toggle {
     top: 30px;
   }
@@ -184,6 +233,22 @@
     padding: 0;
     border-bottom: none;
     background-color: transparent;
+  }
+
+  .main-nav__logo-point {
+    display: inline-block;
+  }
+
+  .main-nav__logo-glassesdekstop {
+    display: inline-block;
+  }
+
+  .main-nav__logo-glassestablet {
+    display: none;
+  }
+
+  .main-nav__logo-stars {
+    display: inline-block;
   }
 
   .main-nav__toggle {
