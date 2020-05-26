@@ -17,92 +17,101 @@
 .btn--download {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
-  //height: 55px;
+  margin-bottom: 33px;
   color: $white-color;
   border: solid 3px $white-color;
   background-color: transparent;
-}
 
-.btn--download:hover,
-.btn--download:focus {
-  outline: none;
-  color: $pink-color;
-  background-color: $white-color;
-}
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $pink-color;
+    background-color: $white-color;
+  }
 
-.btn--download:active {
-  color: rgba($pink-color, 0.3%);
-  background-color: $white-color;
+  &:active {
+    color: rgba($pink-color, 0.3%);
+    background-color: $white-color;
+  }
 }
 
 .btn--primary {
+  margin: 0 auto;
+  margin-top: 40px;
   margin-bottom: 12px;
   color: $pink-color;
   border: solid 3px $pink-color;
   background-color: transparent;
-}
 
-.btn--primary:hover,
-.btn--primary:focus {
-  outline: none;
-  color: $white-color;
-  background-color: $pink-color;
-}
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $white-color;
+    background-color: $pink-color;
+  }
 
-.btn--primary:active {
-  color: rgba($white-color, 0.3%);
-  background-color: $pink-color;
+  &:active {
+    color: rgba($white-color, 0.3%);
+    background-color: $pink-color;
+  }
 }
 
 .btn--secondary {
+  margin: 0 auto;
   color: rgba($grey-color, 0.1%);
   border: solid 3px rgba($grey-color, 0.1%);
   background-color: transparent;
-}
 
-.btn--secondary:hover,
-.btn--secondary:focus {
-  outline: none;
-  color: rgba($grey-color, 0.3%);
-  border: solid 3px rgba($grey-color, 0.3%);
-}
+  &:hover,
+  &:focus {
+    outline: none;
+    color: rgba($grey-color, 0.3%);
+    border: solid 3px rgba($grey-color, 0.3%);
+  }
 
-.btn--secondary:active {
-  color: rgba($white-color, 0.3%);
-  border: solid 3px rgba($grey-color, 0.3%);
-  background-color: rgba($grey-color, 0.3%);
+  &:active {
+    color: rgba($white-color, 0.3%);
+    border: solid 3px rgba($grey-color, 0.3%);
+    background-color: rgba($grey-color, 0.3%);
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .btn--download {
-    width: 300px;
-  }
+  .btn {
+    &--download {
+      margin-bottom: 46px;
+      width: 300px;
+    }
 
-  .btn--primary,
-  .btn--secondary {
-    width: 260px;
-  }
+    &--primary,
+    &--secondary {
+      margin: 0;
+      width: 260px;
+    }
 
-  .btn--primary {
-    margin-bottom: 24px;
+    &--primary {
+      margin-bottom: 25px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .btn--download {
-    font-size: 21px;
-    line-height: 21px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
+  .btn {
+    &--download {
+      margin-bottom: 69px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      font-size: 21px;
+      line-height: 21px;
+    }
 
-  .btn--primary,
-  .btn--secondary {
-    width: 183px;
-  }
+    &--primary,
+    &--secondary {
+      width: 183px;
+    }
 
-  .btn--primary {
-    margin-bottom: 0;
+    &--primary {
+      margin-bottom: 0;
+    }
   }
 }
