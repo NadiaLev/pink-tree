@@ -1,19 +1,22 @@
 .form-img {
   width: auto;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   background-color: $back-lightcolor;
 }
 
 .form-img__container {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  padding-right: 20px;
   padding-bottom: 41px;
-  padding-left: 20px;
-  width: 280px;
+  width: auto;
+}
+
+.form-img__photo {
   margin: 0 auto;
+  width: 280px;
 }
 
 .form-img__image {
@@ -27,26 +30,29 @@
   display: flex;
   justify-content: center;
   list-style: none;
-  padding: 0 20px;
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
   min-height: 161px;
 }
 
 .form-img__item {
   display: flex;
   flex-direction: column;
-  padding-top: 42px;
-  width: 66px;
+  width: 80px;
 
   &--crop {
+    padding-top: 40px;
     align-items: flex-start;
   }
 
   &--fill {
+    padding-top: 41px;
     align-items: center;
   }
 
   &--brightness {
+    padding-top: 43px;
     align-items: flex-end;
   }
 }
@@ -66,16 +72,24 @@
     outline: none;
     fill: $pink-color;
   }
+
+  &--crop {
+    padding-left: 14px;
+  }
+
+  &--brightness {
+    padding-right: 26px;
+  }
 }
 
 .form-img__tool--crop svg {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
 }
 
 .form-img__tool--fill svg {
   width: 48px;
-  height: 43px;
+  height: 48px;
 }
 
 .form-img__tool--brightness svg {
@@ -85,12 +99,14 @@
 }
 
 .form-img__input {
+  padding: 0;
   appearance: none;
   width: 240px;
   position: absolute;
-  top: 119px;
+  top: 124px;
   left: 20px;
   display: none;
+  background: $back-lightcolor;
 }
 
 .form-img__input:focus {
@@ -98,69 +114,68 @@
 }
 
 .form-img__input::-webkit-slider-runnable-track {
-  width: 239.6px;
+  width: 240px;
   height: 1.6px;
   cursor: pointer;
-  background: #283645;
-  border: 0.2px solid #283645;
+  background: $grey-color;
+  border: 0.2px solid $grey-color;
 }
 
 .form-img__input::-webkit-slider-thumb {
-  height: 12px;
-  width: 12px;
+  height: 14px;
+  width: 14px;
   border-radius: 50%;
   background: #f2f2f2;
-  border: solid 2px #d22856;
+  border: solid 2px $pink-color;
   cursor: pointer;
   appearance: none;
-  margin-top: -4.5px;
+  margin-top: -6px;
 }
 
 .form-img__input:focus::-webkit-slider-thumb,
 .form-img__input:active::-webkit-slider-thumb {
-  background: #d22856;
+  background: $pink-color;
 }
 
 .form-img__input::-moz-range-track {
-  width: 239.6px;
+  width: 240px;
   height: 1.6px;
   cursor: pointer;
-  background: #283645;
-  border: 0.2px solid #283645;
+  background: $grey-color;
 }
 
 .form-img__input::-moz-range-thumb {
-  height: 12px;
-  width: 12px;
+  height: 14px;
+  width: 14px;
   border-radius: 50%;
-  background: #f2f2f2;
-  border: solid 2px #d22856;
+  background: $back-lightcolor;
+  border: solid 2px $pink-color;
   cursor: pointer;
 }
 
 .form-img__input:focus::-moz-range-thumb,
 .form-img__input:active::-moz-range-thumb {
-  background: #d22856;
+  background: $pink-color;
 }
 
 .form-img__input::-ms-track {
-  width: 239.6px;
+  width: 240px;
   height: 1.6px;
   cursor: pointer;
   background: transparent;
   border-color: transparent;
-  border-width: 12px 0;
+  border-width: 8px 0;
   color: transparent;
 }
 
 .form-img__input::-ms-fill-lower {
-  background: #283645;
-  border: 0.2px solid #283645;
+  background: $grey-color;
+  border: 0.2px solid $grey-color;
 }
 
 .form-img__input::-ms-fill-upper {
-  background: #283645;
-  border: 0.2px solid #283645;
+  background: $grey-color;
+  border: 0.2px solid $grey-color;
 }
 
 .form-img__input::-ms-thumb {
@@ -168,30 +183,32 @@
   width: 12px;
   border-radius: 50%;
   background: #f2f2f2;
-  border: solid 2px #d22856;
+  border: solid 2px $pink-color;
   cursor: pointer;
+  margin-top: 1px;
 }
 
 .form-img__input:focus::-ms-thumb,
 .form-img__input:active::-ms-thumb {
-  background: #d22856;
+  background: $pink-color;
 }
 
 .form-img__tool:focus + .form-img__input,
 .form-img__tool:active + .form-img__input {
   display: block;
 }
-//временно
+
 .form-img__tool:not(:active) ~ .form-img__input--crop {
   display: block;
 }
 
 .form-img__buttons {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   box-sizing: border-box;
-  min-height: 160px;
+  width: auto;
   border-top: solid 1px $borderform-color;
 }
 
@@ -207,6 +224,11 @@
     padding-left: 20px;
   }
 
+  .form-img__photo {
+    margin: 0;
+    width: 300px;
+  }
+
   .form-img__image {
     width: 300px;
     height: 400px;
@@ -217,13 +239,15 @@
   }
 
   .form-img__list {
+    margin: 0;
+    width: 275px;
     flex-direction: column;
-    padding: 0;
   }
 
   .form-img__item {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
     width: 275px;
     padding: 0;
@@ -232,20 +256,14 @@
 
     &--crop {
       height: 56px;
-      //padding-top: 8px;
-      //padding-bottom: 21px;
     }
 
     &--fill {
       height: 73px;
-      //padding-top: 27px;
-      //padding-bottom: 20px;
     }
 
     &--brightness {
       height: 70px;
-      //padding-top: 26px;
-      //padding-bottom: 24px;
     }
   }
 
@@ -255,16 +273,30 @@
     &:hover {
       fill: $pink-color;
     }
+
+    &--crop {
+      margin-top: -13px;
+      padding-left: 1px;
+    }
+
+    &--fill {
+      padding-top: 8px;
+      padding-left: 2px;
+    }
+
+    &--brightness {
+      padding-left: 7px;
+    }
   }
 
   .form-img__tool--crop svg {
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
   }
 
   .form-img__tool--fill svg {
-    width: 24px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
   }
 
   .form-img__tool--brightness svg {
@@ -277,10 +309,27 @@
     position: static;
     display: block;
     width: 202px;
+
+    &--crop {
+      margin-top: -15px;
+    }
+  }
+
+  .form-img__input::-webkit-slider-runnable-track {
+    width: 202px;
+  }
+
+  .form-img__input::-moz-range-track {
+    width: 202px;
+  }
+
+  .form-img__input::-ms-track {
+    width: 202px;
   }
 
   .form-img__buttons {
-    min-height: 201px;
+    margin: 0;
+    margin-top: 66px;
     border-top: none;
   }
 }
@@ -289,7 +338,7 @@
   .form-img {
     width: 940px;
     margin: 0 auto;
-    margin-bottom: 102px;
+    margin-bottom: 98px;
   }
 
   .form-img__container {
@@ -303,19 +352,40 @@
     width: 410px;
   }
 
+  .form-img__list {
+    width: 410px;
+  }
+
   .form-img__item {
     width: 410px;
     padding-right: 30px;
   }
 
+  .form-img__tool {
+    &--crop {
+      margin-left: -2px;
+      margin-top: -12px;
+      padding-top: 0;
+      padding-left: 0;
+    }
+
+    &--fill {
+      padding-left: 0;
+    }
+
+    &--brightness {
+      padding-left: 6px;
+    }
+  }
+
   .form-img__tool--crop svg {
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
   }
 
   .form-img__tool--fill svg {
     width: 48px;
-    height: 43px;
+    height: 48px;
   }
 
   .form-img__tool--brightness svg {
@@ -328,7 +398,20 @@
     width: 288px;
   }
 
+  .form-img__input::-webkit-slider-runnable-track {
+    width: 288px;
+  }
+
+  .form-img__input::-moz-range-track {
+    width: 288px;
+  }
+
+  .form-img__input::-ms-track {
+    width: 288px;
+  }
+
   .form-img__buttons {
+    margin-top: 146px;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
