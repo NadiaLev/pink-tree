@@ -107,7 +107,7 @@
 .page-footer__text {
   margin: 0;
   margin-top: 15px;
-  margin-right: 5px;
+  margin-right: 11px;
   font-size: 14px;
   line-height: 18px;
 }
@@ -129,42 +129,58 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer--index {
-    position: relative;
-    padding-top: 33px;
-    padding-bottom: 33px;
-    display: block;
-    z-index: 2;
+  .page-footer {
+    padding-bottom: 35px;
+
+    &--index {
+      position: relative;
+      padding-top: 36px;
+      padding-bottom: 33px;
+      display: block;
+      z-index: 2;
+    }
   }
 
   .page-footer__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    width: 620px;
+    width: 660px;
+    padding: 0;
   }
 
   .page-footer__logo {
     margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 73px;
     padding-bottom: 20px;
   }
 
   .page-footer__copyright {
     margin: 0;
+    margin-left: 91px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer--index {
-    padding-top: 68px;
+    padding-top: 71px;
     padding-bottom: 68px;
   }
 
   .page-footer__container {
-    width: 940px;
+    width: 950px;
     padding: 0 130px;
-    //margin-bottom: 71px;
+    padding-right: 120px;
+  }
+
+  .page-footer__logo {
+    margin-left: 0;
+    margin-right: 237px;
+
+    &--index {
+      margin-right: 233px;
+    }
   }
 
   .page-footer__logo-glassestablet {
@@ -181,5 +197,18 @@
 
   .page-footer__logo-point {
     display: inline-block;
+  }
+
+  .page-footer__copyright {
+    margin-left: 224px;
+
+    &--index {
+      margin-left: 227px;
+    }
+  }
+
+  .page-footer__text {
+    font-size: 18px;
+    line-height: 18px;
   }
 }

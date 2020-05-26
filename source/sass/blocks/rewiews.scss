@@ -1,6 +1,6 @@
 .reviews {
   position: relative;
-  padding-top: 45px;
+  padding-top: 43px;
   z-index: 1;
   background-color: $white-color;
 }
@@ -18,7 +18,7 @@
 }
 
 .reviews__author-name {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   color: $black-color;
   font-size: 18px;
   font-weight: 700;
@@ -29,6 +29,7 @@
 
 .reviews__text {
   margin: 0;
+  padding-right: 5px;
   color: $grey-color;
   font-size: 14px;
   font-weight: 400;
@@ -42,7 +43,7 @@
 }
 
 .reviews__toggles {
-  margin-top: 30px;
+  margin-top: 31px;
 }
 
 .reviews__backticks {
@@ -70,15 +71,20 @@
   }
 
   .reviews__small {
+    margin-top: 6px;
     display: block;
     text-align: center;
     order: 2;
+  }
+
+  .reviews__toggles {
+    margin-top: 32px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-top: 185px;
+    padding-top: 187px;
   }
 
   .reviews__container {
@@ -89,10 +95,10 @@
     &::before {
       content: "";
       position: absolute;
-      left: 50%;
+      left: 602px;
       top: -115px;
       width: 79px;
-      height: 63px;
+      height: 65px;
       transform: translateX(-50%);
       background-image: url("../img/icon-quotes.svg");
       background-position: 0 0;
@@ -103,6 +109,21 @@
   .reviews__item {
     width: 700px;
     margin: 0 auto;
+  }
+
+  .reviews__text {
+    margin-bottom: 37px;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .reviews__small {
+    margin-top: 3px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .reviews__toggles {

@@ -1,7 +1,7 @@
 .rates {
   position: relative;
-  margin-top: 35px;
-  padding-top: 91px;
+  margin-top: 34px;
+  padding-top: 93px;
   padding-bottom: 42px;
   background-color: $back-lightcolor;
   background-image: url("../img/bg-triangle-white.svg");
@@ -26,7 +26,7 @@
     background-color: $grey-color;
   }
 
-  &--second td {
+  &--second td:not(:nth-child(1)) {
     border-top: none;
   }
 }
@@ -38,14 +38,12 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  //border-left: solid 2px $lightgrey-color;
   border-right: solid 2px $lightgrey-color;
-  width: 280px;
+  width: 281px;
   padding-top: 19px;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   padding-left: 22px;
   padding-right: 22px;
-  //background-color: $grey-color;
   box-sizing: border-box;
 
   &--hit {
@@ -64,8 +62,8 @@
     &::after {
       content: "Хит";
       position: absolute;
-      top: 12px;
-      left: 7px;
+      top: 13px;
+      left: 5px;
       width: 35px;
       height: 30px;
       font-size: 14px;
@@ -86,24 +84,24 @@
 
 .rates__component {
   position: relative;
+  width: 281px;
   border: solid 2px $lightgrey-color;
   color: $grey-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
-  //width: 280px;
-  padding-top: 14px;
+  padding-top: 15px;
   padding-left: 22px;
   padding-right: 17px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   box-sizing: border-box;
 
   &--ok::after {
     content: "";
     position: absolute;
-    top: 18px;
-    right: 17px;
+    top: 20px;
+    right: 18px;
     width: 31px;
     height: 22px;
     background-image: url("../img/icon-yesgreen.svg");
@@ -115,8 +113,8 @@
   &--close::after {
     content: "";
     position: absolute;
-    top: 17px;
-    right: 17px;
+    top: 14px;
+    right: 18px;
     width: 27px;
     height: 26px;
     background-image: url("../img/icon-no.svg");
@@ -130,7 +128,7 @@
   .rates {
     margin-top: 16px;
     padding-top: 88px;
-    padding-bottom: 68px;
+    padding-bottom: 33px;
     background-position: 0 -42px;
     overflow: auto;
   }
@@ -144,29 +142,27 @@
   }
 
   .rates__plan {
-    padding-top: 10px;
+    padding-top: 13px;
     padding-right: 16px;
-    padding-bottom: 9px;
-    padding-left: 22px;
+    padding-bottom: 8px;
+    padding-left: 19px;
     width: 155px;
     font-size: 16px;
 
     &--empty {
       visibility: hidden;
-      // background-color: transparent;
-      //border: none;
-      // border-bottom: solid 2px $lightgrey-color;
     }
 
     &--hit {
       &::before {
         width: 61px;
         height: 61px;
+        background-image: url("../img/bg-hit-tablet.svg");
         background-size: 61px 61px;
       }
 
       &::after {
-        top: 8px;
+        top: 5px;
         left: 3px;
       }
     }
@@ -177,21 +173,21 @@
   }
 
   .rates__component {
-    padding-top: 7px;
+    padding-top: 8px;
     padding-right: 15px;
-    padding-bottom: 8px;
+    padding-bottom: 9px;
     padding-left: 15px;
     width: 155px;
     text-transform: none;
 
     &--ok::after {
       top: 25%;
-      right: 62px;
+      right: 59px;
     }
 
     &--close::after {
       top: 25%;
-      right: 64px;
+      right: 62px;
     }
   }
 
@@ -208,8 +204,9 @@
   .rates {
     margin-top: 40px;
     padding-top: 148px;
-    padding-bottom: 95px;
+    padding-bottom: 59px;
     background-position: 0 0;
+    background-size: 1223px 82px;
   }
 
   .rates__list {
@@ -228,6 +225,7 @@
       &::before {
         width: 74px;
         height: 73px;
+        background-image: url("../img/bg-hit.svg");
         background-size: 74px 73px;
       }
 
@@ -243,19 +241,21 @@
   }
 
   .rates__component {
-    padding-top: 15px;
+    padding-top: 16px;
     padding-right: 23px;
-    padding-bottom: 14px;
-    padding-left: 23px;
+    padding-bottom: 16px;
+    padding-left: 21px;
     width: 235px;
-    font-size: 18px;
+    font-size: 17px;
 
     &--ok::after {
-      right: 102px;
+      right: 101px;
+      top: 39%;
     }
 
     &--close::after {
-      right: 104px;
+      right: 103px;
+      top: 27%;
     }
   }
 }

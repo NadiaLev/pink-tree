@@ -11,8 +11,8 @@
 .contacts__question {
   margin: 0 auto;
   padding: 0;
-  padding-top: 45px;
-  padding-bottom: 40px;
+  padding-top: 44px;
+  padding-bottom: 39px;
   width: auto;
 }
 
@@ -36,38 +36,56 @@
 
 .contacts__text {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   color: $grey-color;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
+
+  &--write {
+    margin-bottom: 9px;
+  }
+
+  &--come {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts__address {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   color: $pink-color;
   font-size: 24px;
   font-weight: 300;
   line-height: 24px;
   text-align: center;
+  cursor: pointer;
 
-  &:hover,
-  &:focus {
-    outline: none;
-    color: $grey-color;
+  &--mail {
+    margin-bottom: 30px;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $grey-color;
+      border-bottom: solid 1px $grey-color;
+    }
+
+    &:active {
+      color: $grey-color;
+      opacity: 0.3;
+    }
   }
 
-  &:active {
-    color: $grey-color;
-    opacity: 0.3;
+  &--come {
+    margin-bottom: 40px;
+    line-height: 26px;
   }
 }
 
 .contacts__connection {
   position: relative;
   height: 200px;
-  //left: 50%;
   width: 100%;
 
   &::before {
@@ -87,7 +105,7 @@
 
   &::after {
     position: absolute;
-    bottom: 70px;
+    bottom: 69px;
     left: calc(50% - 18px);
     content: "";
     width: 36px;
@@ -120,8 +138,8 @@
   }
 
   .contacts__question {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 46px;
+    padding-bottom: 48px;
   }
 
   .contacts__list {
@@ -135,6 +153,7 @@
     width: 300px;
 
     &--come {
+      margin-top: 22px;
       width: 620px;
     }
   }
@@ -149,7 +168,15 @@
     }
 
     &::after {
-      bottom: 147px;
+      bottom: 144px;
+    }
+  }
+
+  .contacts__text {
+    margin-bottom: 11px;
+
+    &--write {
+      margin-bottom: 12px;
     }
   }
 
@@ -172,12 +199,13 @@
   }
 
   .contacts__question {
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 66px;
+    padding-bottom: 62px;
+    line-height: 58px;
   }
 
   .contacts__list {
-    width: 940px;
+    width: 920px;
   }
 
   .contacts__item {
@@ -192,13 +220,18 @@
     }
 
     &--come {
+      margin: 0;
       order: 1;
       width: 280px;
     }
   }
 
   .contacts__text {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+
+    &--come {
+      margin-bottom: 28px;
+    }
   }
 
   .contacts__address {
@@ -208,477 +241,24 @@
   }
 
   .contacts__connection {
+    margin-top: 6px;
     height: 500px;
 
     &::before {
       top: 0;
       margin-left: -600px;
       width: 1200px;
+      background-size: 1288px 108px;
+      background-position: 50% -7px;
     }
 
     &::after {
-      bottom: 195px;
+      bottom: 202px;
     }
   }
 
   .contacts__map {
     width: 1200px;
-  }
-}
-
-/*
-.contacts {
-  position: relative;
-  width: 320px;
-  margin: 0 auto;
-  background-color: $white-color;
-}
-
-.contacts__wrapper {
-  position: relative;
-  width: auto;
-  background-color: $white-color;
-  z-index: 2;
-}
-
-.contacts__question {
-  position: relative;
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 45px;
-  padding-bottom: 40px;
-  width: auto;
-  z-index: 2;
-}
-
-.contacts__list {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
-  list-style: none;
-  background-color: $white-color;
-  z-index: 2;
-}
-
-.contacts__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contacts__text {
-  margin: 0;
-  margin-bottom: 10px;
-  color: $grey-color;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
-}
-
-.contacts__address {
-  margin: 0;
-  margin-bottom: 25px;
-  color: $pink-color;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 24px;
-  text-align: center;
-
-  &--mail {
-    &:hover {
-      color: $grey-color;
-    }
-
-    &:active {
-      color: $grey-color;
-      opacity: 0.3;
-    }
-  }
-}
-
-.contacts__connection {
-  position: absolute;
-  top: -60px;
-  right: 0;
-  z-index: 1;
-
-  &::before {
-    position: absolute;
-    top: 355px;
-    left: 0;
-    content: "";
-    width: 320px;
-    height: 123px;
-    background-image: url("../../img/bg-triangle-white-footer.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: 1200px 123px;
-  }
-
-  &::after {
-    position: absolute;
-    bottom: 70px;
-    left: calc(50% - 18px);
-    content: "";
-    width: 36px;
-    height: 36px;
-    background-image: url("../../img/icon-map-marker.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    //background-size: 1200px 123px;
-  }
-}
-
-.contacts__map {
-  display: block;
-  width: 320px;
-  margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  .contacts {
-    width: 660px;
-  }
-
-  .contacts__question {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .contacts__connection {
-    top: 41px;
-
-    &::before {
-      top: 270px;
-      width: 660px;
-    }
-
-    &::after {
-      bottom: 256px;
-    }
-  }
-
-  .contacts__list {
-    width: 620px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .contacts__item {
-    width: 300px;
-
-    &--come {
-      width: 620px;
-    }
-  }
-
-  .contacts__address {
-    margin-bottom: 45px;
-
-    &:last-child {
-      margin-bottom: 30px;
-    }
-  }
-
-  .contacts__map {
-    width: 660px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts {
-    width: 1200px;
-  }
-
-  .contacts__question {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-
-  .contacts__list {
-    width: 940px;
-  }
-
-  .contacts__item {
-    width: 280px;
-
-    &--call {
-      order: 0;
-    }
-
-    &--write {
-      order: 2;
-    }
-
-    &--come {
-      order: 1;
-      width: 280px;
-    }
-  }
-
-  .contacts__text {
-    margin-bottom: 25px;
-  }
-
-  .contacts__address {
-    &:last-child {
-      margin-bottom: 20px;
-    }
-  }
-
-  .contacts__connection {
-    top: 78px;
-
-    &::before {
-      top: 261px;
-      width: 1200px;
-    }
-
-    &::after {
-      bottom: 400px;
-    }
-  }
-
-  .contacts__map {
-    width: 1200px;
-  }
-}
-*/
-/*Вариант с абсолютной картой
-.contacts {
-  position: relative;
-  width: auto;
-}
-
-.contacts__wrapper {
-  position: relative;
-  width: auto;
-  background-color: $white-color;
-  z-index: 2;
-}
-
-.contacts__question {
-  position: relative;
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 45px;
-  padding-bottom: 40px;
-  width: auto;
-  z-index: 2;
-}
-
-.contacts__list {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
-  list-style: none;
-  background-color: $white-color;
-  z-index: 2;
-}
-
-.contacts__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contacts__text {
-  margin: 0;
-  margin-bottom: 10px;
-  color: $grey-color;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
-}
-
-.contacts__address {
-  margin: 0;
-  margin-bottom: 25px;
-  color: $pink-color;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 24px;
-  text-align: center;
-
-  &--mail {
-    &:hover {
-      color: $grey-color;
-    }
-
-    &:active {
-      color: $grey-color;
-      opacity: 0.3;
-    }
-  }
-}
-
-.contacts__connection {
-  position: absolute;
-  top: -60px;
-  //left: 50%;
-  width: 100%;
-  z-index: -1;
-
-  &::before {
-    position: absolute;
-    top: 355px;
-    left: 50%;
-    margin-left: -160px;
-    content: "";
-    width: 320px;
-    height: 123px;
-    background-image: url("../../img/bg-triangle-white-footer.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: 1200px 123px;
-    z-index: 2;
-  }
-
-  &::after {
-    position: absolute;
-    bottom: 70px;
-    left: calc(50% - 18px);
-    content: "";
-    width: 36px;
-    height: 36px;
-    background-image: url("../../img/icon-map-marker.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-}
-
-.contacts__connection iframe {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 200px;
-  border: none;
-}
-
-.contacts__map {
-  display: block;
-  width: 320px;
-  margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  .contacts__question {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .contacts__list {
-    width: 620px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .contacts__item {
-    width: 300px;
-
-    &--come {
-      width: 620px;
-    }
-  }
-
-  .contacts__connection {
-    top: 41px;
-
-    &::before {
-      top: 270px;
-      margin-left: -330px;
-      width: 660px;
-    }
-
-    &::after {
-      bottom: 256px;
-    }
-  }
-
-  .contacts__connection iframe {
     height: 500px;
   }
-
-  .contacts__address {
-    margin-bottom: 45px;
-
-    &:last-child {
-      margin-bottom: 30px;
-    }
-  }
-
-  .contacts__map {
-    width: 660px;
-  }
 }
-
-@media (min-width: $desktop-width) {
-  .contacts__question {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-
-  .contacts__list {
-    width: 940px;
-  }
-
-  .contacts__item {
-    width: 280px;
-
-    &--call {
-      order: 0;
-    }
-
-    &--write {
-      order: 2;
-    }
-
-    &--come {
-      order: 1;
-      width: 280px;
-    }
-  }
-
-  .contacts__text {
-    margin-bottom: 25px;
-  }
-
-  .contacts__address {
-    &:last-child {
-      margin-bottom: 20px;
-    }
-  }
-
-  .contacts__connection {
-    top: 78px;
-
-    &::before {
-      top: 261px;
-      margin-left: -600px;
-      width: 1200px;
-    }
-
-    &::after {
-      bottom: 400px;
-    }
-  }
-
-  .contacts__connection iframe {
-    height: 715px;
-  }
-
-  .contacts__map {
-    width: 1200px;
-  }
-}
-*/
