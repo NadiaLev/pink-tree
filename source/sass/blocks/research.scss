@@ -11,14 +11,15 @@
 
 @media (min-width: $tablet-width) {
   .research {
+    position: relative;
     display: block;
-    margin-top: 60px;
+    margin-top: 59px;
   }
 
   .research__container {
     position: relative;
     width: 620px;
-    padding-top: 40px;
+    padding-top: 37px;
     padding-right: 20px;
     padding-bottom: 27px;
     padding-left: 20px;
@@ -40,25 +41,35 @@
 
     &::after {
       position: absolute;
-      content: "24";
+      content: "";
       top: 55px;
       left: 38px;
       width: 176px;
       height: 176px;
       background-color: $white-color;
       border: solid 13px $pink-color;
+      border-radius: 50%;
+    }
+  }
+
+  .research__effect {
+    margin-left: 308px;
+
+    &::before {
+      position: absolute;
+      content: "24";
+      top: 76px;
+      left: 51px;
+      width: 176px;
+      height: 176px;
       color: $pink-color;
       font-size: 96px;
       line-height: 150px;
       font-weight: 700;
       text-align: center;
       vertical-align: middle;
-      border-radius: 50%;
+      z-index: 2;
     }
-  }
-
-  .research__effect {
-    margin-left: 310px;
   }
 
   .research__title {
@@ -72,12 +83,16 @@
 
   .research__description {
     margin: 0;
-    margin-bottom: 10px;
-    padding-right: 8px;
+    margin-bottom: 12px;
+    padding-right: 15px;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
     color: $grey-color;
+  }
+
+  .research__description br:nth-child(1) {
+    display: none;
   }
 
   .research__link {
@@ -92,15 +107,15 @@
 @media (min-width: $desktop-width) {
   .research {
     margin-top: 0;
-    padding-top: 65px;
+    padding-top: 63px;
     background-color: $back-lightcolor;
   }
 
   .research__container {
     width: 940px;
     padding: 0 130px;
-    padding-top: 90px;
-    padding-bottom: 110px;
+    padding-top: 93px;
+    padding-bottom: 112px;
 
     &::before {
       top: 0;
@@ -116,18 +131,23 @@
       width: 221px;
       height: 221px;
       border: solid 16px $pink-color;
+    }
+  }
+
+  .research__effect {
+    margin-left: 365px;
+
+    &::before {
+      top: 95px;
+      left: 190px;
       font-size: 120px;
       line-height: 187px;
     }
   }
 
-  .research__effect {
-    margin-left: 360px;
-  }
-
   .research__title {
     line-height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 27px;
   }
 
   .research__title br {
@@ -135,13 +155,17 @@
   }
 
   .research__description {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     padding-right: 59px;
     font-size: 18px;
     line-height: 30px;
   }
 
-  .research__description br {
+  .research__description br:nth-child(1) {
+    display: block;
+  }
+
+  .research__description br:nth-child(2) {
     display: none;
   }
 
