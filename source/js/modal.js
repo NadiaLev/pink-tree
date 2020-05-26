@@ -1,12 +1,13 @@
 "use strict";
-let form = document.querySelector("form");
-let surname = form.querySelector("[name=surname]");
-let name = form.querySelector("[name=name]");
-let mail = form.querySelector("[name=mail]");
-let error = document.querySelector(".modal--error");
-let request = document.querySelector(".modal--request");
-let errorclose = document.querySelector(".button--error");
-let requestclose = document.querySelector(".button--request");
+
+var form = document.querySelector("form");
+var surname = form.querySelector("[name=surname]");
+var name = form.querySelector("[name=name]");
+var mail = form.querySelector("[name=mail]");
+var error = document.querySelector(".modal--error");
+var request = document.querySelector(".modal--request");
+var errorclose = document.querySelector(".button--error");
+var requestclose = document.querySelector(".button--request");
 
 form.addEventListener("submit", function (evt) {
   if (!surname.value || !name.value || !mail.value) {
