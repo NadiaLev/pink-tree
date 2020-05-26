@@ -1,5 +1,5 @@
 .site-text {
-  width: 280px;
+  width: 265px;
   padding: 0 20px;
   margin: 0 auto;
   margin-top: 45px;
@@ -10,13 +10,13 @@
   text-align: center;
 
   &--foto {
-    width: 250px;
+    width: 240px;
     margin-bottom: 50px;
   }
 
   &--foto-down {
-    margin-top: 42px;
-    margin-bottom: 42px;
+    margin-top: 41px;
+    margin-bottom: 44px;
   }
 }
 
@@ -26,18 +26,18 @@
 
 @media (min-width: $tablet-width) {
   .site-text {
-    margin-top: 95px;
-    margin-bottom: 70px;
+    margin-top: 92px;
+    margin-bottom: 61px;
     width: 500px;
     font-size: 18px;
 
     &--foto {
-      margin-bottom: 75px;
+      margin-bottom: 76px;
     }
 
     &--foto-down {
-      margin-top: 48px;
-      margin-bottom: 68px;
+      margin-top: 47px;
+      margin-bottom: 69px;
     }
   }
 
@@ -48,18 +48,18 @@
 
 @media (min-width: $desktop-width) {
   .site-text {
-    margin-top: 95px;
+    margin-top: 93px;
     margin-bottom: 0;
     width: 770px;
 
     &--foto {
-      margin-bottom: 85px;
+      margin-bottom: 89px;
       width: 590px;
     }
 
     &--foto-down {
-      margin-top: 8px;
-      margin-bottom: 62px;
+      margin-top: 7px;
+      margin-bottom: 66px;
     }
   }
 }
