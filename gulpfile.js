@@ -49,8 +49,7 @@ gulp.task("html", function () {
     .src("source/*.html")
     .pipe(posthtml([include()]))
     .pipe(htmlmin({
-      collapseWhitespace: true,
-      removeComments: true
+           removeComments: true
     }))
     .pipe(gulp.dest("build"));
 });

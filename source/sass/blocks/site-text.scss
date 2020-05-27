@@ -11,12 +11,12 @@
 
   &--foto {
     width: 240px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   &--foto-down {
     margin-top: 41px;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
   }
 }
 
@@ -36,7 +36,7 @@
     }
 
     &--foto-down {
-      margin-top: 47px;
+      margin-top: 45px;
       margin-bottom: 69px;
     }
   }
@@ -48,7 +48,7 @@
 
 @media (min-width: $desktop-width) {
   .site-text {
-    margin-top: 93px;
+    margin-top: 91px;
     margin-bottom: 0;
     width: 770px;
 
@@ -58,7 +58,7 @@
     }
 
     &--foto-down {
-      margin-top: 7px;
+      margin-top: 6px;
       margin-bottom: 66px;
     }
   }

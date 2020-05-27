@@ -12,7 +12,7 @@
 }
 
 .rates__list {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   margin-left: -540px;
   width: calc(280% - 320px);
   border-collapse: collapse;
@@ -39,8 +39,8 @@
   line-height: 30px;
   text-transform: uppercase;
   border-right: solid 2px $lightgrey-color;
-  width: 281px;
-  padding-top: 19px;
+  width: 280px;
+  padding-top: 18px;
   padding-bottom: 20px;
   padding-left: 22px;
   padding-right: 22px;
@@ -84,17 +84,17 @@
 
 .rates__component {
   position: relative;
-  width: 281px;
+  width: 280px;
   border: solid 2px $lightgrey-color;
   color: $grey-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
-  padding-top: 15px;
+  padding-top: 13px;
   padding-left: 22px;
   padding-right: 17px;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
   box-sizing: border-box;
 
   &--ok::after {
@@ -126,7 +126,7 @@
 
 @media (min-width: $tablet-width) {
   .rates {
-    margin-top: 16px;
+    margin-top: 15px;
     padding-top: 88px;
     padding-bottom: 33px;
     background-position: 0 -42px;
@@ -142,9 +142,9 @@
   }
 
   .rates__plan {
-    padding-top: 13px;
+    padding-top: 12px;
     padding-right: 16px;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
     padding-left: 19px;
     width: 155px;
     font-size: 16px;
@@ -173,7 +173,7 @@
   }
 
   .rates__component {
-    padding-top: 8px;
+    padding-top: 6px;
     padding-right: 15px;
     padding-bottom: 9px;
     padding-left: 15px;
