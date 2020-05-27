@@ -105,7 +105,7 @@
       url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 59% 100%, 50% 0;
-    background-size: 106%, cover;
+    background-size: auto, cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png"),
